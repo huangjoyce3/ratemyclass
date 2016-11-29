@@ -1,101 +1,1 @@
-﻿number,name,type
-"15843","BAG","null"
-"15850","null","null"
-"15821","JHN","null"
-"15865","EEB","null"
-"INFO   101","SOCIAL NETWORKING","(I&S/NW)"
-"15810","MGH","null"
-"15829","MGH","null"
-"15840","EEB","null"
-"15866","null","null"
-"15797","THO","null"
-"INFO   490","CAPSTONE PROJECT I",""
-"15854","KNE","null"
-"15862","GLD","null"
-"15813","MGH","null"
-"15841","MGH","null"
-"15835","MGH","null"
-"15793","EEB","null"
-"INFO   362","VISUAL INFO DESIGN","(VLPA)"
-"15803","MGH","null"
-"15858","null","null"
-"15833","MGH","null"
-"15853","KNE","null"
-"15832","MGH","null"
-"15861","JHN","null"
-"15820","MGH","null"
-"15848","MGH","null"
-"INFO   370","INTRO DATA SCIENCE","(QSR)"
-"INFO   330","UX & INFO ARCH",""
-"22109","MGH","null"
-"15857","null","null"
-"15867","null","null"
-"15818","MGH","null"
-"INFO   499","IND STUDY",""
-"15796","MGH","null"
-"INFO   450","INFO ETHICS & POLCY","(I&S)"
-"INFO   200","INTELL FOUNDATIONS","(I&S)"
-"15827","BLD","null"
-"21747","null","null"
-"15860","JHN","null"
-"15852","SAV","null"
-"15800","FSH","null"
-"15802","MGH","null"
-"15823","MGH","null"
-"15837","MGH","null"
-"15846","MGH","null"
-"15819","MGH","null"
-"INFO   445","ADV DBMS DESIGN",""
-"15845","SAV","null"
-"15816","MGH","null"
-"15856","MGH","null"
-"15804","MGH","null"
-"INFO   201","TECH FOUNDATIONS","(QSR)"
-"INFO   344","SERVER-SIDE WEB DEV",""
-"INFO   433","CONTENT STRATEGY","(I&S)"
-"15842","MGH","null"
-"INFO   310","INFO ASSR & CYBRSEC",""
-"15863","SMI","null"
-"15825","BLD","null"
-"15811","MGH","null"
-"15844","MGH","null"
-"15806","MGH","null"
-"15836","MGH","null"
-"15798","MGH","null"
-"15855","KNE","null"
-"15817","MGH","null"
-"INFO   474","INTERACTIVE INFO VIS","(VLPA,QSR)"
-"INFO   495","INTERNSHIP",""
-"15847","SAV","null"
-"15812","MGH","null"
-"21746","null","null"
-"15808","MGH","null"
-"15795","SAV","null"
-"15801","MGH","null"
-"15851","SAV","null"
-"INFO   496","SERVICE LRN IN INFO",""
-"15838","JHN","null"
-"INFO   415","TOPICS IN CYBERSEC",""
-"INFO   380","IS ANALYSIS & DSGN",""
-"15822","JHN","null"
-"15815","MGH","null"
-"INFO   386","PROFESSIONALISM",""
-"15799","SAV","null"
-"INFO   360","DESIGN THINKING","(I&S)"
-"15830","JHN","null"
-"15831","JHN","null"
-"INFO   466","IMMERSIVE ENVIRMNTS","(VLPA/I&S)"
-"15849","MGH","null"
-"INFO   448","ANDROID MOBILE DEV",""
-"15805","MGH","null"
-"15807","MGH","null"
-"15834","MGH","null"
-"15826","BLD","null"
-"INFO   498","TOPIC INFORMATICS",""
-"15794","SMI","null"
-"15809","MGH","null"
-"15814","FSH","null"
-"15828","BLD","null"
-"15839","EEB","null"
-"15864","JHN","null"
-"15824","MGH","null"
+number	name	type	creditsINFO   101	SOCIAL NETWORKING	(I&S/NW)	5INFO   490	CAPSTONE PROJECT I		5INFO   362	VISUAL INFO DESIGN	(VLPA)	5INFO   370	INTRO DATA SCIENCE	(QSR)	5INFO   330	UX & INFO ARCH		5INFO   499	IND STUDY		5INFO   450	INFO ETHICS & POLCY	(I&S)	5INFO   200	INTELL FOUNDATIONS	(I&S)	5INFO   445	ADV DBMS DESIGN		5INFO   201	TECH FOUNDATIONS	(QSR)	5INFO   344	SERVER-SIDE WEB DEV		5INFO   433	CONTENT STRATEGY	(I&S)	5INFO   310	INFO ASSR & CYBRSEC		5INFO   474	INTERACTIVE INFO VIS	"(VLPA,QSR)"	5INFO   495	INTERNSHIP		INFO   496	SERVICE LRN IN INFO		5INFO   415	TOPICS IN CYBERSEC		5INFO   380	IS ANALYSIS & DSGN		5INFO   386	PROFESSIONALISM		4INFO   360	DESIGN THINKING	(I&S)	5INFO   466	IMMERSIVE ENVIRMNTS	(VLPA/I&S)	5INFO   448	ANDROID MOBILE DEV		5INFO   498	TOPIC INFORMATICS		5
