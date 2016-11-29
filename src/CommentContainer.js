@@ -16,4 +16,4 @@ var CommentContainer = React.createClass({
 
 });
 
-export default CommentContainer	;
+export default CommentContainer;

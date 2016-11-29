@@ -9,7 +9,7 @@ var Comment = React.createClass({
 	                <span className="content">Review</span> 
 	                <span className="tags">Selected Tags</span> 
 	                <span className="date">Date</span> 
-	                <span className="course taken">User took this course in ? quarter ?</span> 
+	                <span className="course taken">User took this course in </span> 
             	</p>
 			</div>
 		);

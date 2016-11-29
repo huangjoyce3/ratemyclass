@@ -2,8 +2,12 @@ import React from 'react';
 
 var HomePage = React.createClass({
 	render(){
-		render(
-			<div>HomePage</div>
+		return(
+			<div>
+				<div>HomePage</div>
+				<input id="searchString" type="text" className="validate"/>
+	            <label htmlFor="searchString">Search for a class</label>
+	        </div>
 		);
 	}
 
