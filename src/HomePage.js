@@ -2,10 +2,13 @@ import React from 'react';
 import './css/HomePage.css'
 import $ from 'jquery';
 import Baby from 'babyparse';
+import firebase from 'firebase';
+import FirebaseConfig from './Config';
+import ToggleAuth from './ToggleAuth';
 
 var HomePage = React.createClass({
 	getInitialState(){
-		return{data:[], searchString:'', targetCourse:[],checked:false, user:null, authOption:'sign-in'}
+		return{data:[], searchString:'', targetCourse:[], checked:false, user:null, authOption:'sign-in'}
 	},
 
 	componentDidMount(){
@@ -54,7 +57,7 @@ var HomePage = React.createClass({
 				}
 			});
 		}
-	}
+	},
 
 	 // Sign up for an account
     signUp(event){
@@ -112,30 +115,42 @@ var HomePage = React.createClass({
 
 
 	render(){
-
+		// Determine which 'authenticate' component should be shown
+        if(this.state.authOption == 'sign-up') {
+            var authComponent = <SignUp submit={this.signUp}/>
+        }
+        else {
+            var authComponent = <SignIn submit={this.signIn}/>
+        }
 		return(
-			{!this.state.user &&
-                    <div>
-                        {authComponent}
-                        <ToggleAuth handleClick={this.toggleLogin} authOption={this.state.authOption} />
-                    </div>
+				<div>
+					{!this.state.user &&
+	                    <div>
+	                        {authComponent}
+	                        <ToggleAuth handleClick={this.toggleLogin} authOption={this.state.authOption} />
+	                    </div>
 
-                }
-			<div>
-				<div className="title">
-					<h1>Rate My Classes</h1>
-					<h4>Help you find the prefect class!</h4>
-				</div>
-				<div className="searchBar">
-				<form onSubmit={this.setSearchString}>
-					<input placeholder="Search a course"/>
-				    <button type="submit" className="searchCourse">Submit</button>
-				</form>
-				</div>
-				<p>{this.state.targetCourse.name}</p>
-				<p>{this.state.targetCourse.number}</p>
-				<p>{this.state.targetCourse.type}</p>
-				<p>{this.state.targetCourse.credits}</p>
+                	}
+
+                	{this.state.user &&
+						<section>
+							<div className="title">
+								<h1>Rate My Classes</h1>
+								<h4>Help you find the prefect class!</h4>
+							</div>
+							<div className="searchBar">
+							<form onSubmit={this.setSearchString}>
+								<input placeholder="Search a course"/>
+							    <button type="submit" className="searchCourse">Submit</button>
+							</form>
+							</div>
+							<p>{this.state.targetCourse.name}</p>
+							<p>{this.state.targetCourse.number}</p>
+							<p>{this.state.targetCourse.type}</p>
+							<p>{this.state.targetCourse.credits}</p>
+						</section>
+					}
+					
 	        </div>
 		);
 	}

@@ -104,17 +104,19 @@ var Auth = React.createClass({
                 }
                 {this.state.user &&
                     <section>
-				
-			
-                    	<b>Welcome Back, {this.state.user.displayName}</b>
+                        <b>Welcome Back, {this.state.user.displayName}</b>
                         <SignOut submit={this.signOut}/>
-                        
-                        <div>
-                        <div>HomePage</div>
-							<input id="searchString" placeholder="Search for a class" type="text" className="validate"/>
-			        	</div>
-			        	<a className="btn btn-primary">see all courses</a>
-						
+                        <div className="title">
+                            <h1>Rate My Classes</h1>
+                            <h4>Help you find the prefect class!</h4>
+                        </div>
+                        <div className="searchBar">
+                        <form onSubmit={this.setSearchString}>
+                            <input placeholder="Search a course"/>
+                            <button type="submit" className="searchCourse">Submit</button>
+                        </form>
+                        </div>
+                    
                     </section>
                 }
             </div>

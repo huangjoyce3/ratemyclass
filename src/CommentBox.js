@@ -8,35 +8,34 @@ var CommentBox = React.createClass({
             	<div className="input-field col s12">
 
                     <p>When did you take this class?</p>
-<<<<<<< HEAD
+
                     <div className="input-field">
                     <input id="taken" type="text" className="validate"/>
                     <label htmlFor="taken">Enter a quarter</label>
                     </div>
-=======
+
                     <input id="taken" placeholder="You took this class in..."type="text" className="validate"/>
->>>>>>> searchfunction
+
 
                     <div className="input-field">
                     <p>Who was your instructor?</p>
-<<<<<<< HEAD
+
                     <input id="professor" type="text" className="validate"/>
                     <label htmlFor="professor">You took this class with...</label>
                     </div>
-=======
+
                     <input id="professor" placeholder="You took this class with.." type="text" className="validate" />
->>>>>>> searchfunction
+
 
                     <div className="input-field">
                     <p>Write a review</p>
-<<<<<<< HEAD
+
                 	<input id="review" type="text" className="validate"/>
                     <label htmlFor="review">Write a review</label>
                     </div>
 
-=======
                 	<input id="review" placeholder="Write a review" type="text" className="validate" />
->>>>>>> searchfunction
+
 
                     <p>Would you like other users to contact you?</p>
                     // materialize click options
