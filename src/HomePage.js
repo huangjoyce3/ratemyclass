@@ -29,7 +29,13 @@ var HomePage = React.createClass({
 
 		$.get('./data/info_time_schedule_winter_2017.csv').then(function(data) {
 			var parsed = Baby.parse(data, {header:true});
-			this.setState({data:parsed.data})
+			var classes = {};
+			parsed.data.forEach(function(d){
+				classes[d.number] = d;
+			});
+			this.setState({classes: classes});
+			console.log(classes);
+			this.setState({data:parsed.data});
 		}.bind(this));
 	},
 
@@ -46,16 +52,21 @@ var HomePage = React.createClass({
 	getCourse(searchString){
 		var self = this;
 		if(searchString !== ''){
-			self.state.data.map(function(d, i) {
-				var isClass = d.number;
-				// console.log(isClass);
-				// console.log(searchString);
 
-				if(searchString === isClass) {
-					self.setState({targetCourse:d})
-					console.log('HI');
-				}
-			});
+			if ( self.state.classes.hasOwnProperty(searchString) ) {
+				var targetClass = self.state.classes[searchString];
+				self.setState({targetCourse:targetClass});
+			}
+
+
+			// self.state.data.forEach(function(d, i) {
+			// 	var isClass = d.number;
+
+			// 	if(searchString === isClass) {
+			// 		self.setState({targetCourse:d})
+			// 		console.log('HI');
+			// 	}
+			// });
 		}
 	},
 
