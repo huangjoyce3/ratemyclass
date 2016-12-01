@@ -113,7 +113,7 @@ var Auth = React.createClass({
                         <div>HomePage</div>
 							<input id="searchString" placeholder="Search for a class" type="text" className="validate"/>
 			        	</div>
-			        	<a  className="btn btn-primary">see all courses</a>
+			        	<a className="btn btn-primary">see all courses</a>
 						
                     </section>
                 }
