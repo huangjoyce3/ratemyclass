@@ -1,5 +1,6 @@
-
 import React from 'react';
+import './css/Course.css';
+
 var Course = React.createClass({
 	
     render() {

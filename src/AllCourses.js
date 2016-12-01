@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Baby from 'babyparse';
 import $ from 'jquery';
 import Course from './Course';
+import './css/AllCourses.css';
 
 var AllCourses = React.createClass({
 	getInitialState(){
@@ -17,7 +18,7 @@ var AllCourses = React.createClass({
 		return(
 			<div className="coursesPage">
 				<h2 className="white-text">Informatics Courses Winter 2017</h2>
-				<div>
+				<div className="courseList">
 					{this.state.courses.map(function(course, i){
 						return(
 							<Course
