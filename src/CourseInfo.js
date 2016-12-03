@@ -4,16 +4,14 @@ var CourseInfo = React.createClass({
 	render(){
 		return(
 			<div className="CourseInfo">
-				<p>Course Name: </p> 
-				<p>Offered in: </p> 
-				<p>Requirement: </p> 
+				<p>Course Name: {this.props.targetCourse.number}</p> 
+				<p>Offered in: {this.props.targetCourse.name}</p> 
+				<p>Requirement: {this.props.targetCourse.type}</p>
+				<p>Credits: {this.props.targetCourse.credits}</p> 
 			</div>
 		);
 	}
-	/*this.props.data.name
-	  this.props.data.offered
-	  this.props.data.requirement
-	 */
+
 
 });
 

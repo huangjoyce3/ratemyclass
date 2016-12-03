@@ -5,6 +5,15 @@ import Baby from 'babyparse';
 import firebase from 'firebase';
 import FirebaseConfig from './Config';
 import ToggleAuth from './ToggleAuth';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
+// import { browserHistory } from 'react-router'
+//import {Router} from 'react-router'
+
+// import CommentContainer from './CommentContainer';
+
+
+
 
 var HomePage = React.createClass({
 	getInitialState(){
@@ -40,9 +49,10 @@ var HomePage = React.createClass({
 	},
 
 	setSearchString(event){
+		console.log('hi');
 		event.preventDefault();
 		var value = event.target.childNodes[0].value;
-		//console.log(value);
+		value = value.toUpperCase();
 		this.setState({searchString:value});
 		this.getCourse(value);
 
@@ -68,7 +78,29 @@ var HomePage = React.createClass({
 			// 	}
 			// });
 		}
+
+		this.redirect();
 	},
+
+	contextTypes: {
+    	router: React.PropTypes.object
+  	},
+
+	redirect() {
+
+		console.log('hi');
+		// browserHistory.push('/CommentContainer')
+		// this.context.router.transitionTo('/CommentContainer');
+    	//this.context.router.push('/CommentContainer')
+    	this.context.router.push({
+    		pathname: '/CommentContainer'
+    		//state: {targetCourse:this.state.targetCourse}
+    	})
+    	// 	pathname: CommentContainer,
+    	// 	state: {targetCourse:targetCourse}
+    	// });
+
+    },
 
 	 // Sign up for an account
     signUp(event){
@@ -120,18 +152,19 @@ var HomePage = React.createClass({
 
     // Toggle between 'sign-up' and 'sign-in'
     toggleLogin() {
-        let option = this.state.authOption == 'sign-in' ? 'sign-up' : 'sign-in';
+        let option = this.state.authOption === 'sign-in' ? 'sign-up' : 'sign-in';
         this.setState({authOption:option});
     },
 
 
+
 	render(){
 		// Determine which 'authenticate' component should be shown
-        if(this.state.authOption == 'sign-up') {
+        if(this.state.authOption === 'sign-up') {
             var authComponent = <SignUp submit={this.signUp}/>
         }
         else {
-            var authComponent = <SignIn submit={this.signIn}/>
+             authComponent = <SignIn submit={this.signIn}/>
         }
 		return(
 				<div>
@@ -155,10 +188,9 @@ var HomePage = React.createClass({
 							    <button type="submit" className="searchCourse">Submit</button>
 							</form>
 							</div>
-							<p>{this.state.targetCourse.name}</p>
 							<p>{this.state.targetCourse.number}</p>
-							<p>{this.state.targetCourse.type}</p>
-							<p>{this.state.targetCourse.credits}</p>
+
+
 						</section>
 					}
 					

@@ -6,9 +6,10 @@ import './css/CommentContainer.css';
 
 var CommentContainer = React.createClass({
 	render(){
+		var targetCourse = this.props.targetCourse;
 		return(
 			<div className="courseSec">
-			<CourseInfo />
+			<CourseInfo targetCourse="haha"/>
 			<CommentBox />
 			<Comment />
 			</div>

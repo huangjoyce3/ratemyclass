@@ -19,14 +19,12 @@ var CommentBox = React.createClass({
 
                     <input id="professor" type="text" className="validate"/>
                     <label htmlFor="professor">You took this class with...</label>
-                    </div>
 
                     <input id="professor" placeholder="You took this class with.." type="text" className="validate" />
 
                     <p>Write a review</p>
                 	<input id="review" type="text" className="validate"/>
                     <label htmlFor="review">Write a review</label>
-                    </div>
 
                 	<input id="review" placeholder="Write a review" type="text" className="validate" />
 

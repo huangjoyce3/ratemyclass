@@ -18,7 +18,7 @@ import { IndexRoute, Router, Route, hashHistory } from 'react-router';
 ReactDOM.render(
         <Router history={hashHistory}>
             <Route path="/" component={App}>
-                <IndexRoute component={Auth}/>
+                <IndexRoute component={HomePage}/>
                 <Route path="CommentContainer" component={CommentContainer}/>
                 <Route path="AllCourses" component={AllCourses}/>
                 <Route path="Auth" component={Auth}/>
