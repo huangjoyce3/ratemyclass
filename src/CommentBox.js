@@ -20,6 +20,13 @@ var CommentBox = React.createClass({
                             <p>Would you like other users to contact you?</p>
                             <p>Would you like to comment as an anonymous?</p>
 
+                            <p>Difficaulty of this class? Rank 1(easiest) to 5(hardest)</p>
+                            <input id="difficaulty" placeholder="Rank 1-5" type="text" className="validate" />
+
+                            <p>The amount of workload if this class? Rank 1(light) to 5(heavy)</p>
+                            <input id="workload" placeholder="Rank 1-5" type="text" className="validate" />
+
+
                             //materialize click options 
                         </div>
                         <button type="submit" className="btn">Submit</button>

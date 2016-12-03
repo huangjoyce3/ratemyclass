@@ -31,6 +31,7 @@ var CommentContainer = React.createClass({
             quarter:event.target.elements['quarter'].value,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
+            difficaulty:event.target.elements['difficaulty'].value,
             time:firebase.database.ServerValue.TIMESTAMP
         };
 
@@ -48,7 +49,8 @@ var CommentContainer = React.createClass({
 		var targetCourse = this.props.targetCourse;
 		return(
 			<div className="courseSec">
-			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} type={this.props.courseType} credits={this.props.courseCredits}/>
+			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
+								type={this.props.courseType} credits={this.props.courseCredits} />
 			<CommentBox handleSubmit={this.createReview}/>
 			{reviewKeys.map((d) => {
 				return <Comment key={d}

@@ -65,31 +65,14 @@ var HomePage = React.createClass({
 
 			if ( self.state.classes.hasOwnProperty(searchString) ) {
 				var targetClass = self.state.classes[searchString];
-				self.setState({targetCourse:targetClass, hasCourse:!this.state.hasCourse});
+				self.setState({targetCourse:targetClass})
+				let hasCourse = this.state.hasCourse? this.state.hasCourse : !this.state.hasCourse;
+				self.setState({hasCourse:hasCourse});
 			}
 		}
-		//this.redirect();
 	},
 
-	// contextTypes: {
- //    	router: React.PropTypes.object
- //  	},
 
-	// redirect() {
-
-	// 	console.log('hi');
-	// 	// browserHistory.push('/CommentContainer')
-	// 	// this.context.router.transitionTo('/CommentContainer');
- //    	//this.context.router.push('/CommentContainer')
- //    	this.context.router.push({
- //    		pathname: '/CommentContainer'
- //    		//state: {targetCourse:this.state.targetCourse}
- //    	})
-    	// 	pathname: CommentContainer,
-    	// 	state: {targetCourse:targetCourse}
-    	// });
-
-    // },
 
 	 // Sign up for an account
     signUp(event){
@@ -184,12 +167,18 @@ var HomePage = React.createClass({
 					}
 
 					{this.state.hasCourse &&
-						<CommentContainer 
-							courseNumber={this.state.targetCourse.number}  
-							courseName={this.state.targetCourse.name}
-							courseType={this.state.targetCourse.type}
-							courseCredits={this.state.targetCourse.credits}
-						/>
+						<div>
+							<form onSubmit={this.setSearchString}>
+								<input placeholder="Search a course"/>
+								<button type="submit" className="searchCourse">Submit</button>
+							</form>
+							<CommentContainer 
+								courseNumber={this.state.targetCourse.number}  
+								courseName={this.state.targetCourse.name}
+								courseType={this.state.targetCourse.type}
+								courseCredits={this.state.targetCourse.credits}
+							/>
+						</div>
 
 					}
 					
