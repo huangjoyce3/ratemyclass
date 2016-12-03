@@ -5,23 +5,14 @@ var Comment = React.createClass({
 		return(
 			<div>            
 				<p className="reviews">
-	                <span className="user">Username</span> 
-	                <span className="content">Review</span> 
-	                <span className="tags">Selected Tags</span> 
-	                <span className="date">Date</span> 
-	                <span className="course taken">User took this course in </span> 
+	                <span className="content">Review: {this.props.data.review}</span> 
+	                <span className="date">Date: {this.props.data.time}</span> 
+	                <span className="course taken">User took this course in: {this.props.data.quarter}</span> 
+	                <span className="professor">The user took this course with: {this.props.data.professor}</span>
             	</p>
 			</div>
 		);
 	}
-
-	/*
-		this.props.user.name
-		this.props.user.review
-		this.props.tag array
-		firebase function
-		this.props.user.taken
-	*/
 });
 
 export default Comment;
