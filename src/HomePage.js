@@ -10,14 +10,14 @@ import SignIn from './SignIn';
 // import { browserHistory } from 'react-router'
 //import {Router} from 'react-router'
 
-// import CommentContainer from './CommentContainer';
+import CommentContainer from './CommentContainer';
 
 
 
 
 var HomePage = React.createClass({
 	getInitialState(){
-		return{data:[], searchString:'', targetCourse:[], checked:false, user:null, authOption:'sign-in'}
+		return{data:[], searchString:'', targetCourse:[], checked:false, user:null, authOption:'sign-in', hasCourse:false}
 	},
 
 	componentDidMount(){
@@ -65,42 +65,31 @@ var HomePage = React.createClass({
 
 			if ( self.state.classes.hasOwnProperty(searchString) ) {
 				var targetClass = self.state.classes[searchString];
-				self.setState({targetCourse:targetClass});
+				self.setState({targetCourse:targetClass, hasCourse:!this.state.hasCourse});
 			}
-
-
-			// self.state.data.forEach(function(d, i) {
-			// 	var isClass = d.number;
-
-			// 	if(searchString === isClass) {
-			// 		self.setState({targetCourse:d})
-			// 		console.log('HI');
-			// 	}
-			// });
 		}
-
-		this.redirect();
+		//this.redirect();
 	},
 
-	contextTypes: {
-    	router: React.PropTypes.object
-  	},
+	// contextTypes: {
+ //    	router: React.PropTypes.object
+ //  	},
 
-	redirect() {
+	// redirect() {
 
-		console.log('hi');
-		// browserHistory.push('/CommentContainer')
-		// this.context.router.transitionTo('/CommentContainer');
-    	//this.context.router.push('/CommentContainer')
-    	this.context.router.push({
-    		pathname: '/CommentContainer'
-    		//state: {targetCourse:this.state.targetCourse}
-    	})
+	// 	console.log('hi');
+	// 	// browserHistory.push('/CommentContainer')
+	// 	// this.context.router.transitionTo('/CommentContainer');
+ //    	//this.context.router.push('/CommentContainer')
+ //    	this.context.router.push({
+ //    		pathname: '/CommentContainer'
+ //    		//state: {targetCourse:this.state.targetCourse}
+ //    	})
     	// 	pathname: CommentContainer,
     	// 	state: {targetCourse:targetCourse}
     	// });
 
-    },
+    // },
 
 	 // Sign up for an account
     signUp(event){
@@ -176,7 +165,7 @@ var HomePage = React.createClass({
 
                 	}
 
-                	{this.state.user &&
+                	{this.state.user && !this.state.hasCourse &&
 						<section>
 							<div className="title">
 								<h1>Rate My Classes</h1>
@@ -192,6 +181,16 @@ var HomePage = React.createClass({
 
 
 						</section>
+					}
+
+					{this.state.hasCourse &&
+						<CommentContainer 
+							courseNumber={this.state.targetCourse.number}  
+							courseName={this.state.targetCourse.name}
+							courseType={this.state.targetCourse.type}
+							courseCredits={this.state.targetCourse.credits}
+						/>
+
 					}
 					
 	        </div>

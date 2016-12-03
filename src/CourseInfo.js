@@ -4,10 +4,10 @@ var CourseInfo = React.createClass({
 	render(){
 		return(
 			<div className="CourseInfo">
-				<p>Course Name: {this.props.targetCourse.number}</p> 
-				<p>Offered in: {this.props.targetCourse.name}</p> 
-				<p>Requirement: {this.props.targetCourse.type}</p>
-				<p>Credits: {this.props.targetCourse.credits}</p> 
+				<p>Course Number: {this.props.number}</p> 
+				<p>Course Title: {this.props.name}</p> 
+				<p>General Requirement: {this.props.type}</p>
+				<p>Credits: {this.props.credits}</p> 
 			</div>
 		);
 	}
