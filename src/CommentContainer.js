@@ -8,7 +8,7 @@ import firebase from 'firebase';
 
 var CommentContainer = React.createClass({
 	getInitialState(){
-        return{quarter:'', professor:'', review:'', reviews:[]}
+        return{reviews:[]}
     },
 
     componentDidMount(){
@@ -27,6 +27,7 @@ var CommentContainer = React.createClass({
         event.preventDefault();
 
         let isReview = {
+        	course:this.props.courseNumber,
             quarter:event.target.elements['quarter'].value,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
@@ -40,7 +41,9 @@ var CommentContainer = React.createClass({
 
 	render(){
 
-		let reviewKeys = Object.keys(this.state.reviews);
+		let reviewKeys = Object.keys(this.state.reviews).filter((d) => {
+			return this.state.reviews[d].course === this.props.courseNumber
+		});
 
 		var targetCourse = this.props.targetCourse;
 		return(

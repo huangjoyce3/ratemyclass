@@ -20,6 +20,7 @@ ReactDOM.render(
             <Route path="/" component={App}>
                 <IndexRoute component={HomePage}/>
                 <Route path="CommentContainer" component={CommentContainer}/>
+                
                 <Route path="AllCourses" component={AllCourses}/>
                 <Route path="Auth" component={Auth}/>
                 <Route path="About" component={About}/>
