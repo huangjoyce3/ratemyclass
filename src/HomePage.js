@@ -17,7 +17,8 @@ import CommentContainer from './CommentContainer';
 
 var HomePage = React.createClass({
 	getInitialState(){
-		return{data:[], searchString:'', targetCourse:[], checked:false, user:null, authOption:'sign-in', hasCourse:false}
+		return{data:[], searchString:'', targetCourse:[], checked:false, 
+			   user:null, authOption:'sign-in', hasCourse:false, hasResult:true}
 	},
 
 	componentDidMount(){
@@ -65,9 +66,10 @@ var HomePage = React.createClass({
 
 			if ( self.state.classes.hasOwnProperty(searchString) ) {
 				var targetClass = self.state.classes[searchString];
-				self.setState({targetCourse:targetClass})
-				let hasCourse = this.state.hasCourse? this.state.hasCourse : !this.state.hasCourse;
-				self.setState({hasCourse:hasCourse});
+				self.setState({targetCourse:targetClass, hasCourse:true, hasResult:true});
+			} else {
+				self.setState({hasResult:false});
+
 			}
 		}
 	},
@@ -165,6 +167,12 @@ var HomePage = React.createClass({
 
 						</section>
 					}
+
+					{this.state.user && !this.state.hasResult &&
+						<div className="no-result">Class Not Found</div>
+
+					}
+
 
 					{this.state.hasCourse &&
 						<div>
