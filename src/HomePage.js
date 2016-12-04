@@ -154,7 +154,7 @@ var HomePage = React.createClass({
 						<section>
 							<div className="title">
 								<h1>Rate My Classes</h1>
-								<h4>Help you find the prefect class!</h4>
+								<h4>Help you find the perfect class!</h4>
 							</div>
 							<div className="searchBar">
 							<form onSubmit={this.setSearchString}>
@@ -181,6 +181,7 @@ var HomePage = React.createClass({
 								<button type="submit" className="searchCourse">Submit</button>
 							</form>
 							<CommentContainer 
+								displayName={this.state.user.displayName}
 								courseNumber={this.state.targetCourse.number}  
 								courseName={this.state.targetCourse.name}
 								courseType={this.state.targetCourse.type}

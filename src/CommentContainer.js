@@ -27,12 +27,14 @@ var CommentContainer = React.createClass({
         event.preventDefault();
 
         let isReview = {
+            author:this.props.displayName,
         	course:this.props.courseNumber,
             quarter:event.target.elements['quarter'].value,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
-            anan:event.target.elements['anonymous'].value,
+            anonymous:event.target.elements['anon'].value,
             difficulty:event.target.elements['difficulty'].value,
+            workload:event.target.elements['workload'].value,
             time:firebase.database.ServerValue.TIMESTAMP
         };
 
@@ -56,7 +58,7 @@ var CommentContainer = React.createClass({
 			<div className="courseSec">
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
-			<CommentBox handleSubmit={this.createReview} handleChange={this.checkBoxChange}/>
+			<CommentBox handleSubmit={this.createReview} />
 			{reviewKeys.map((d) => {
 				return <Comment key={d}
 						data={this.state.reviews[d]}
