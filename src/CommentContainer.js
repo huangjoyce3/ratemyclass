@@ -8,7 +8,7 @@ import firebase from 'firebase';
 
 var CommentContainer = React.createClass({
 	getInitialState(){
-        return{reviews:[]}
+        return{reviews:[], isChecked:''}
     },
 
     componentDidMount(){
@@ -31,13 +31,18 @@ var CommentContainer = React.createClass({
             quarter:event.target.elements['quarter'].value,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
-            difficaulty:event.target.elements['difficaulty'].value,
+            anan:event.target.elements['anonymous'].value,
+            difficulty:event.target.elements['difficulty'].value,
             time:firebase.database.ServerValue.TIMESTAMP
         };
 
         this.reviewRef.push(isReview);
         event.target.reset();
 
+    },
+
+    checkBoxChange(event){
+        this.setState({isChecked: event.target.checked});
     },
 
 	render(){
@@ -51,7 +56,7 @@ var CommentContainer = React.createClass({
 			<div className="courseSec">
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
-			<CommentBox handleSubmit={this.createReview}/>
+			<CommentBox handleSubmit={this.createReview} handleChange={this.checkBoxChange}/>
 			{reviewKeys.map((d) => {
 				return <Comment key={d}
 						data={this.state.reviews[d]}
