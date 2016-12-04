@@ -1,7 +1,24 @@
 import React from 'react';
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
 
 
 var CommentBox = React.createClass({
+    getInitialState() {
+        return{
+            options: [
+                { value: 'autumn', label: 'Autumn' },
+                { value: 'winter', label: 'Winter' },
+                { value: 'spring', label: 'Spring' },
+                { value: 'summer', label: 'Summer' },
+            ]
+        }
+    },
+
+    onChange(value){
+        this.setState({value});
+    },
+
 	render(){
 		return(
             <div>
@@ -10,13 +27,11 @@ var CommentBox = React.createClass({
                     	<div className="input-field col s12">
                             
                             <p>When did you take this class?</p>
-                            {/*<select value={this.state.value} onChange={this.props.handleChange}>
-                              <option value="1">Autumn</option>
-                              <option value="2">Winter</option>
-                              <option value="3">Spring</option>
-                              <option value="4">Summer</option>
-                            </select>*/}
-                            <input id="quarter" placeholder="I took this class in.." type="text" className="validate" />
+                            <Select onChange={this.onChange}
+                                options={this.state.options}
+                                value={this.state.value}
+                            
+                            />
 
                             <p>Who was your instructor?</p>
                             <input id="professor" placeholder="I took this class with.." type="text" className="validate" />
@@ -31,16 +46,12 @@ var CommentBox = React.createClass({
                                     <label for="yes">Yes</label>*/}
                             <input id="anon" placeholder="Y/N" type="text" className="validate" />
 
-                            <p>Difficulty of this class? Rank 1 (easiest) to 5 (hardest)</p>
-                            <input id="difficulty" min="1" max="5" type="number" className="validate"/>
+                            <p>Difficulty of this class?</p>
+                            <input id="difficulty" placeholder="1 (easy) to 5 (hard)" min="1" max="5" type="number" className="validate"/>
 
-                            <p>The amount of workload if this class? Rank 1(light) to 5(heavy)</p>
-                            <input id="workload" min="1" max="5" type="number" className="validate" />
+                            <p>The amount of workload if this class?</p>
+                            <input id="workload" placeholder="1 (light) to 5 (heavy)" min="1" max="5" type="number" className="validate" />
 
-
-
-
-                            //materialize click options 
                         </div>
                         <button type="submit" className="btn">Submit</button>
                     </form>

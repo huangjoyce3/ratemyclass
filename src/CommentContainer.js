@@ -4,11 +4,13 @@ import CommentBox from './CommentBox';
 import CourseInfo from './CourseInfo';
 import './css/CommentContainer.css';
 import firebase from 'firebase';
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
 
 
 var CommentContainer = React.createClass({
 	getInitialState(){
-        return{reviews:[], isChecked:''}
+        return{reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"]}
     },
 
     componentDidMount(){
@@ -29,7 +31,8 @@ var CommentContainer = React.createClass({
         let isReview = {
             author:this.props.displayName,
         	course:this.props.courseNumber,
-            quarter:event.target.elements['quarter'].value,
+            //Doesnt work... yet
+            //quarter:event.target.elements['Select'].state,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
             anonymous:event.target.elements['anon'].value,
@@ -58,7 +61,8 @@ var CommentContainer = React.createClass({
 			<div className="courseSec">
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
-			<CommentBox handleSubmit={this.createReview} />
+			<CommentBox handleSubmit={this.createReview} quartersList={this.options}
+                aut={this.state.quarters[0]} win={this.state.quarters[1]}/>
 			{reviewKeys.map((d) => {
 				return <Comment key={d}
 						data={this.state.reviews[d]}

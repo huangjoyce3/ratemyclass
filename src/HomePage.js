@@ -7,18 +7,17 @@ import FirebaseConfig from './Config';
 import ToggleAuth from './ToggleAuth';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-// import { browserHistory } from 'react-router'
-//import {Router} from 'react-router'
+
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
 
 import CommentContainer from './CommentContainer';
-
-
-
 
 var HomePage = React.createClass({
 	getInitialState(){
 		return{data:[], searchString:'', targetCourse:[], checked:false, 
-			   user:null, authOption:'sign-in', hasCourse:false, hasResult:true}
+			   user:null, authOption:'sign-in', hasCourse:false, hasResult:true,
+			}
 	},
 
 	componentDidMount(){
