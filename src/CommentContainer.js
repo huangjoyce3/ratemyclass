@@ -6,6 +6,7 @@ import './css/CommentContainer.css';
 import firebase from 'firebase';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
+import Chart from './Chart';
 
 
 var CommentContainer = React.createClass({
@@ -20,6 +21,7 @@ var CommentContainer = React.createClass({
             if(snapshot.val()){
                 this.setState({reviews:snapshot.val()});
             }
+
 
         });
 
@@ -56,6 +58,12 @@ var CommentContainer = React.createClass({
 			return this.state.reviews[d].course === this.props.courseNumber
 		});
 
+		var total = [];
+		total = reviewKeys.map((d) => {
+			  return this.state.reviews[d].difficulty;
+		});
+		console.log(total);
+
 		var targetCourse = this.props.targetCourse;
 		return(
 			<div className="courseSec">
@@ -65,9 +73,10 @@ var CommentContainer = React.createClass({
                 aut={this.state.quarters[0]} win={this.state.quarters[1]}/>
 			{reviewKeys.map((d) => {
 				return <Comment key={d}
-						data={this.state.reviews[d]}
-				/>
+						data={this.state.reviews[d]} />
 			})}
+			<Chart data={total} />
+
 			</div>
 		);
 	}

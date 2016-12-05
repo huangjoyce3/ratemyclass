@@ -20,8 +20,8 @@ var Comment = React.createClass({
 	                <span className="date">Date: {this.props.data.time}</span> 
 	                <span className="course taken">User took this course in: {this.props.data.quarter}</span> 
 	                <span className="professor">The user took this course with: {this.props.data.professor}</span>
-	                <span className="difficaulty">Difficulty: {this.props.data.difficulty}</span>
-	                <span className="difficaulty">Workload: {this.props.data.workload}</span>
+	                <span className="difficulty">The difficulty of this course is: {this.props.data.difficulty}</span>
+	                <span className="workload">The workload of this course is: {this.props.data.workload}</span>
             	</p>
 			</div>
 		);
