@@ -81,7 +81,7 @@ var CommentContainer = React.createClass({
 				return <Comment key={d}
 						data={this.state.reviews[d]} />
 			})}
-			<Chart difficultyData={difficultyData} workloadData={workloadData}/>
+			
 
 			</div>
 		);

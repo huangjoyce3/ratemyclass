@@ -25,7 +25,7 @@
 	color: white;
 }
 
-.mainPage input[type="text"] {
+.searchArea input[type="text"] {
 	border: 1px solid white;
 	border-radius: 30px;
 	width: 60%;
@@ -34,7 +34,7 @@
     background-color: white;
 }
 
-.mainPage input[type="text"]:focus {
+.searchArea input[type="text"]:focus {
     border: 1px solid white;
 }
 
