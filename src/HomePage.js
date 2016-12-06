@@ -149,6 +149,8 @@ var HomePage = React.createClass({
 
                 	}
 
+                	{!this.state.hasCourse &&
+
                 	<div className="mainPage">
 	                	<div className="searchArea">
 		                	{this.state.user && !this.state.hasCourse &&
@@ -172,6 +174,7 @@ var HomePage = React.createClass({
 							}
 						</div>
 					</div>
+					}
 
 					{this.state.hasCourse &&
 						<div>
