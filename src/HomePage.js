@@ -149,36 +149,38 @@ var HomePage = React.createClass({
 
                 	}
 
-                	{this.state.user && !this.state.hasCourse &&
-						<section>
-							<div className="title">
-								<h1>Rate My Class</h1>
-								<h4>Find the perfect class!</h4>
-							</div>
-							<div className="searchBar">
-							<form onSubmit={this.setSearchString}>
-								<input placeholder="Search a course"/>
-							    <button type="submit" className="searchCourse">Submit</button>
-							</form>
-							</div>
-							<p>{this.state.targetCourse.number}</p>
+                	<div className="mainPage">
+	                	<div className="searchArea">
+		                	{this.state.user && !this.state.hasCourse &&
+								<section>
+									<div className="title">
+										<h1>Rate My Class</h1>
+										<h4>Find the perfect class!</h4>
+									</div>
+									<div className="searchBar">
+										<form onSubmit={this.setSearchString}>
+											<input type="text" placeholder="Search a course"/>
+										    <button type="submit" className="searchCourse">Search</button>
+										</form>
+									</div>
+									<p>{this.state.targetCourse.number}</p>
+								</section>
+							}
 
-
-						</section>
-					}
-
-					{this.state.user && !this.state.hasResult &&
-						<div className="no-result">Class Not Found</div>
-
-					}
-
+							{this.state.user && !this.state.hasResult &&
+								<div className="no-result">Class Not Found</div>
+							}
+						</div>
+					</div>
 
 					{this.state.hasCourse &&
 						<div>
-							<form onSubmit={this.setSearchString}>
-								<input placeholder="Search a course"/>
-								<button type="submit" className="searchCourse">Submit</button>
-							</form>
+							<div className="searchClass">
+								<form onSubmit={this.setSearchString}>
+									<input type="text" placeholder="Search a course"/>
+									<button type="submit" className="searchCourse">Search</button>
+								</form>
+							</div>
 							<CommentContainer 
 								displayName={this.state.user.displayName}
 								courseNumber={this.state.targetCourse.number}  

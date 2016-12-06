@@ -14,7 +14,9 @@
     "jquery": "^3.1.1",
     "materialize-css": "^0.97.8",
     "react": "^15.4.0",
+    "react-addons-css-transition-group": "^15.4.1",
     "react-dom": "^15.4.0",
+    "react-motion": "^0.4.5",
     "react-router": "^3.0.0",
     "react-select": "^1.0.0-rc.2"
   },

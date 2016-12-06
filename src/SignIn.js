@@ -5,9 +5,11 @@ import { Link } from 'react-router';
 var SignIn = React.createClass({
 	render(){
 		return(
-			<section className="container">
+			<section>
+                <div className="signInPage">
+                <div className="signInArea">
                 <div className="signTitle">
-                    <h1>Rate My Classes</h1>
+                    <h1>Rate My Class</h1>
                     <h4>Sign In To Your Account</h4>
                 </div>
                 <form onSubmit={this.props.submit} className="col s7 authenticate" id="sign-up">
@@ -22,10 +24,11 @@ var SignIn = React.createClass({
                         </div>
                     </div>
                     <div className="signBtn">
-                        <button className="btn btn-primary">Sign In</button>
+                        <button type="submit" className="btn btn-primary">Sign In</button>
                     </div>
                 </form>
-                
+                </div> 
+                </div>
             </section>
 		);
 	}

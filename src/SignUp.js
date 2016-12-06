@@ -1,8 +1,11 @@
 import React from 'react';
+import './css/SignUp.css';
 var SignUp = React.createClass({
 	render(){
 		return(
-			<section className="container">
+			<section>
+                <div className="signUpPage">
+                <div className="signUpArea">
                 <div className="signTitle">
                     <h1>Rate My Classes</h1>
                     <h4>Sign up for an Account</h4>
@@ -23,9 +26,11 @@ var SignUp = React.createClass({
                         </div>
                     </div>
                     <div className="signBtn">
-                        <button className="btn btn-primary">Sign Up</button>
+                        <button type="submit" className="btn btn-primary">Sign Up</button>
                     </div>
                 </form>
+                </div> 
+                </div>
             </section>
 		);
 	}

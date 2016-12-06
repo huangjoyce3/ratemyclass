@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/CommentBox.css';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
@@ -22,6 +23,7 @@ var CommentBox = React.createClass({
 	render(){
 		return(
             <div>
+                <div className="comment">
                 <div className="comment-form">
         			<form onSubmit={this.props.handleSubmit}>
                     	<div className="input-field col s12">
@@ -53,6 +55,7 @@ var CommentBox = React.createClass({
                         </div>
                         <button type="submit" className="btn">Submit</button>
                     </form>
+                </div>
                 </div>
             </div>
 

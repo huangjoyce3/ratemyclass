@@ -1,0 +1,11 @@
+.CourseInfo h4 {
+	display: table;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.CourseInfo p {
+	display: table;
+    margin: 0 auto;
+}

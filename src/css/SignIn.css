@@ -1,6 +1,22 @@
+.signInPage {
+    background-image: linear-gradient(rgba(246, 244, 251, 0.5), rgba(246, 244, 251, 0.5)),
+    url(../imgs/uwcamp.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+    margin-top: -45px;
+}
+
+.signInPage .mainPage {
+    display: none;
+}
+
 .signTitle {
 	text-align: center;
+    padding-top: 20px;
 	margin-bottom: 30px;
+    color: white;
 }
 
 .row {
@@ -8,14 +24,55 @@
 }
 
 form.authenticate {
-    border: 1px solid #000000;
+    border: 1px solid white;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
     border-radius: 20px;
 }
 
 .signBtn {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 0px;
+}
+
+.signInArea {
+    background: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    position: relative;
+    top: 70px;
+    padding-bottom: 60px;
+    width: 500px;
+}
+
+.input-field label {
+    color: white;
+}
+
+.input-field input[type= email]:focus + label {
+     color: white;
+}
+
+.input-field input[type= password]:focus + label {
+     color: white;
+}
+
+.input-field input[type=email]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+}
+
+.input-field input[type=password]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+}
+
+.input-field input[type=email] {
+     color: white;
+}
+
+.input-field input[type=password] {
+     color: white;
 }

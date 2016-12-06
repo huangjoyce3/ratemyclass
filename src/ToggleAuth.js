@@ -9,7 +9,7 @@ var ToggleAuth = React.createClass({
         let buttonText = this.props.authOption == 'sign-up' ? 'Sign In' : 'Sign Up'
         return(
             <div className="needAcc">
-                <p><em>{text}</em><button onClick={this.props.handleClick} className="btn btn-primary" id="upBtn">{buttonText}</button></p>
+                <p><em>{text}</em><div onClick={this.props.handleClick} type="submit" className="upBtn">{buttonText}</div></p>
             </div>
         );
     }
