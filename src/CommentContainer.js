@@ -58,11 +58,17 @@ var CommentContainer = React.createClass({
 			return this.state.reviews[d].course === this.props.courseNumber
 		});
 
-		var total = [];
-		total = reviewKeys.map((d) => {
+		var difficultyData = [];
+		difficultyData = reviewKeys.map((d) => {
 			  return this.state.reviews[d].difficulty;
 		});
-		console.log(total);
+		console.log(difficultyData);
+
+		var workloadData = [];
+		workloadData = reviewKeys.map((d) => {
+			  return this.state.reviews[d].workload;
+		});
+		console.log(workloadData)
 
 		var targetCourse = this.props.targetCourse;
 		return(
@@ -75,7 +81,7 @@ var CommentContainer = React.createClass({
 				return <Comment key={d}
 						data={this.state.reviews[d]} />
 			})}
-			<Chart data={total} />
+			<Chart difficultyData={difficultyData} workloadData={workloadData}/>
 
 			</div>
 		);
