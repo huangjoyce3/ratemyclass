@@ -1,3 +1,18 @@
+.allTitle {
+	color: black;
+	text-align: center;
+}
+
 .courseList {
-	margin-left: 30px;
+	margin-left: 50px;
+}
+
+.infoCourses {
+	display: table;
+    margin: 0 auto;
+}
+
+.infoCourses p {
+	margin-left: -30px;
+	font-size: 18px;
 }

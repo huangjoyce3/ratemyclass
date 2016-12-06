@@ -17,15 +17,21 @@ var AllCourses = React.createClass({
 	render(){
 		return(
 			<div className="coursesPage">
-				<h2 className="white-text">Informatics Courses Winter 2017</h2>
-				<div className="courseList">
-					{this.state.courses.map(function(course, i){
-						return(
-							<Course
-								key={'course-'+i}
-								number={course.number}/>
-						)
-					})}
+				<h2 className="allTitle">Course Offerings in Informatics</h2>
+				<div className="infoCourses">
+					<p>Available courses in <b>Winter 2017</b>:</p>
+					<div className="courseList">
+						{this.state.courses.map(function(course, i){
+							return(
+								<Course
+									key={'course-'+i}
+									number={course.number}
+									name={course.name}
+									type={course.type}
+									credits={course.credits} />
+							)
+						})}
+					</div>
 				</div>
 			</div>
 		);
