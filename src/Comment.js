@@ -16,12 +16,12 @@ var Comment = React.createClass({
 			<div> 
 				<h5 id="reviewHeader">{displayName}</h5>           
 				<p className="reviews">
-	                <span className="content">{this.props.data.review}</span> 
-	                <span className="date">Date: {this.props.data.time}</span> 
-	                <span className="course taken">User took this course in: {this.props.data.quarter}</span> 
-	                <span className="professor">The user took this course with: {this.props.data.professor}</span>
-	                <span className="difficulty">The difficulty of this course is: {this.props.data.difficulty}</span>
-	                <span className="workload">The workload of this course is: {this.props.data.workload}</span>
+	                <span className="content"><b>{this.props.data.review}</b></span> 
+	                <p className="date">Date: {this.props.data.time}</p> 
+	                <p className="course taken">User took this course in: {this.props.data.quarter}</p> 
+	                <p className="professor">Professor: {this.props.data.professor}</p>
+	                <p className="difficulty">Difficulty: {this.props.data.difficulty}</p>
+	                <p className="workload">Workload: {this.props.data.workload}</p>
             	</p>
 			</div>
 		);
