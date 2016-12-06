@@ -152,8 +152,8 @@ var HomePage = React.createClass({
                 	{this.state.user && !this.state.hasCourse &&
 						<section>
 							<div className="title">
-								<h1>Rate My Classes</h1>
-								<h4>Help you find the perfect class!</h4>
+								<h1>Rate My Class</h1>
+								<h4>Find the perfect class!</h4>
 							</div>
 							<div className="searchBar">
 							<form onSubmit={this.setSearchString}>
