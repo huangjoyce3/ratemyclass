@@ -177,13 +177,18 @@ var HomePage = React.createClass({
 					}
 
 					{this.state.hasCourse &&
-						<div>
+						<div className="coursePage">
 							<div className="searchClass">
 								<form onSubmit={this.setSearchString}>
 									<input type="text" placeholder="Search a new course"/>
 									<button type="submit" className="searchCourse">Search</button>
 								</form>
 							</div>
+
+							{this.state.user && !this.state.hasResult &&
+								<div className="no-result">Class Not Found</div>
+							}
+
 							<CommentContainer 
 								displayName={this.state.user.displayName}
 								courseNumber={this.state.targetCourse.number}  

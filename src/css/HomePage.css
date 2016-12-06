@@ -64,7 +64,7 @@ button[type="submit"]:hover {
 	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24);
 }
 
-.no-result {
+.searchArea .no-result {
 	color: white;
 	background-color: #ff4d4d;
 	text-align: center;
@@ -96,4 +96,13 @@ button[type="submit"]:hover {
 .searchClass .searchCourse {
 	display: table;
     margin: 0 auto;
+}
+
+.coursePage .no-result {
+	color: white;
+	background-color: #ff4d4d;
+	text-align: center;
+	margin: 0 auto;
+	width: 15%;
+	margin-top: 15px;
 }
