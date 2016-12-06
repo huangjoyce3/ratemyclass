@@ -23,8 +23,8 @@ var CommentBox = React.createClass({
 	render(){
 		return(
             <div>
-                <div className="comment">
                 <div className="comment-form">
+                <div className="comment">
         			<form onSubmit={this.props.handleSubmit}>
                     	<div className="input-field col s12">
                             
@@ -49,7 +49,7 @@ var CommentBox = React.createClass({
                             <p>Difficulty of this class?</p>
                             <input id="difficulty" placeholder="1 (easy) to 5 (hard)" min="1" max="5" type="number" className="validate"/>
 
-                            <p>The amount of workload if this class?</p>
+                            <p>The amount of workload from this class?</p>
                             <input id="workload" placeholder="1 (light) to 5 (heavy)" min="1" max="5" type="number" className="validate" />
 
                         </div>

@@ -15,7 +15,7 @@ render(){
 			<div className="CourseInfo">
 				<h4>{this.props.number} : &nbsp; {toCamelCase(this.props.name)}</h4> 
 				<p>General Requirement: {this.props.type}</p>
-				<p>Credits: {this.props.credits}</p> 
+				<p>Credits: {this.props.credits}</p>
 			</div>
 		);
 	}

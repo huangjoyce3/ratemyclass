@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/Comment.css';
 
 var Comment = React.createClass({
 	render(){
@@ -13,7 +14,8 @@ var Comment = React.createClass({
 		}
 
 		return(
-			<div> 
+			<div>
+				<div className='reviewSec'> 
 				<h5 id="reviewHeader">{displayName}</h5>           
 				<p className="reviews">
 	                <span className="content"><b>{this.props.data.review}</b></span> 
@@ -23,6 +25,7 @@ var Comment = React.createClass({
 	                <p className="difficulty">Difficulty: {this.props.data.difficulty}</p>
 	                <p className="workload">Workload: {this.props.data.workload}</p>
             	</p>
+            	</div>
 			</div>
 		);
 	}

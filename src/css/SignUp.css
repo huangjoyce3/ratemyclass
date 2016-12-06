@@ -46,15 +46,15 @@ form.authenticate {
     width: 500px;
 }
 
-.input-field input[type= text]:focus + label {
+.signUpPage .input-field input[type= text]:focus + label {
      color: white;
 }
 
-.input-field input[type=text]:focus {
+.signUpPage .input-field input[type=text]:focus {
      border-bottom: 1px solid white;
      box-shadow: 0 1px 0 0 white;
 }
 
-.input-field input[type=text] {
+.signUpPage .input-field input[type=text] {
      color: white;
 }

@@ -47,32 +47,32 @@ form.authenticate {
     width: 500px;
 }
 
-.input-field label {
+.signInPage .input-field label {
     color: white;
 }
 
-.input-field input[type= email]:focus + label {
+.signInPage .input-field input[type= email]:focus + label {
      color: white;
 }
 
-.input-field input[type= password]:focus + label {
+.signInPage .input-field input[type= password]:focus + label {
      color: white;
 }
 
-.input-field input[type=email]:focus {
+.signInPage .input-field input[type=email]:focus {
      border-bottom: 1px solid white;
      box-shadow: 0 1px 0 0 white;
 }
 
-.input-field input[type=password]:focus {
+.signInPage .input-field input[type=password]:focus {
      border-bottom: 1px solid white;
      box-shadow: 0 1px 0 0 white;
 }
 
-.input-field input[type=email] {
+.signInPage .input-field input[type=email] {
      color: white;
 }
 
-.input-field input[type=password] {
+.signInPage .input-field input[type=password] {
      color: white;
 }

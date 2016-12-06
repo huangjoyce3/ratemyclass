@@ -78,14 +78,15 @@ button[type="submit"]:hover {
 }
 
 .searchClass input[type="text"] {
-	border: 1px solid white;
+	border: 1px solid black;
 	border-radius: 30px;
     text-align: center;
     background-color: white;
+    margin-top: -12px;
 }
 
 .searchClass input[type="text"]:focus {
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .bar {
