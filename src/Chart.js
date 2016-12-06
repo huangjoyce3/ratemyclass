@@ -26,6 +26,11 @@ const Chart = React.createClass({
   },
  
   render() {
+  		var difficultyData = this.props.difficultyData;
+		var workloadData = this.props.workloadData;
+		console.log(difficultyData);
+		console.log(workloadData);
+	
     return (
         <div>
             <div style={{width: '50%'}}> 
@@ -39,6 +44,7 @@ const Chart = React.createClass({
         </div>
     );
   }
+
 })
 
 export default Chart
