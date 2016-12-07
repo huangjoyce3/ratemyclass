@@ -16,6 +16,7 @@ var CommentContainer = React.createClass({
 	getInitialState(){
         return{reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
         quarterSelected:'', courseEvals:[]}
+
     },
 
     componentDidMount(){
@@ -25,16 +26,17 @@ var CommentContainer = React.createClass({
             if(snapshot.val()){
                 this.setState({reviews:snapshot.val()});
             }
-
-
         });
         $.get('./data/sample.csv').then(function(data) {
             var parsed = Baby.parse(data, {header:true});
             this.setState({courseEvals:parsed.data})
         }.bind(this));
 
+        $.get('./data/sample.csv').then(function(data) {
+            var parsed = Baby.parse(data, {header:true});
+            this.setState({courseEvals:parsed.data})
+        }.bind(this));
     },
-
     createReview(event){
         event.preventDefault();
         console.log(+event.target.elements['difficulty'.value])
@@ -76,19 +78,21 @@ var CommentContainer = React.createClass({
 		chartData = reviewKeys.map((d) => {
 			  return this.state.reviews[d]
 		});
-		console.log(chartData)
 
         let evalKeys = Object.keys(this.state.courseEvals).filter((d) => {
             return this.state.courseEvals[d].course === this.props.courseNumber 
             && this.state.courseEvals[d].instructor === 'Michael Freeman' 
             && this.state.courseEvals[d].quarter === 'WI16'
         });
-        
+
+        console.log(this.state.courseEvals)
+        console.log(evalKeys)
         var courseEvalData = [];
 
         courseEvalData = evalKeys.map((d) => {
            return {name:this.state.courseEvals[d].Question, uv:+this.state.courseEvals[d].Median, pv: 5, fill:this.getRandomColor()}
-        });
+        })
+        console.log(chartData)
 		// var workloadData = [];
 		// workloadData = reviewKeys.map((d) => {
 		// 	  return parseInt(this.state.reviews[d].workload, 10);
@@ -101,6 +105,7 @@ var CommentContainer = React.createClass({
         
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
+
 			
             <div className="chartSec">
             <ReChart chartData={chartData}/>
@@ -116,7 +121,9 @@ var CommentContainer = React.createClass({
 				return <Comment key={d}
 						data={this.state.reviews[d]} />
 			})}
+
             </div>
+
 
 			</div>
 

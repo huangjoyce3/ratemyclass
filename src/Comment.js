@@ -2,6 +2,8 @@ import React from 'react';
 import './css/Comment.css';
 
 var Comment = React.createClass({
+
+	
 	render(){
 		//Anonymous function
 		let displayName;
@@ -12,7 +14,7 @@ var Comment = React.createClass({
 		}else{
 			displayName=this.props.data.author;
 		}
-
+		
 		return(
 			<div className="allReview">
 				<div className='reviewSec'> 

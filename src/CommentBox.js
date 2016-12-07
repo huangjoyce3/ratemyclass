@@ -2,23 +2,30 @@ import React from 'react';
 import './css/CommentBox.css';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
+import $ from 'jquery';
+import Baby from 'babyparse';
 
 
 var CommentBox = React.createClass({
     getInitialState() {
         return{
+            quarters: [{radioValue:'Autumn'},{radioValue:'Winter'}],
             options: [
                 { value: 'autumn', label: 'Autumn' },
                 { value: 'winter', label: 'Winter' },
                 { value: 'spring', label: 'Spring' },
                 { value: 'summer', label: 'Summer' },
-            ]
+            ]           
         }
     },
-
     onChange(value){
         this.setState({value});
     },
+
+    onQuartersChanged (event) {
+        console.log(this.state.quarter)
+    this.setState({quarter:event.target.value});
+  },
 
 	render(){
 		return(
@@ -29,9 +36,9 @@ var CommentBox = React.createClass({
                     	<div className="input-field col s12">
                             
                             <p>When did you take this class?</p>
-                            <Select onChange={this.onChange}
+                            {<Select onChange={this.onChange}
                                 options={this.state.options}
-                                value={this.state.value} />
+                                value={this.state.value} />}
 
                             <p>Who was your instructor?</p>
                             <input id="professor" placeholder="I took this class with.." type="text" className="validate" />

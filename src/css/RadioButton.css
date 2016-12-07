@@ -1,0 +1,8 @@
+input[type="radio"]{
+    -webkit-appearance: none;
+    visibility: visible;
+}
+
+.testing{
+	border-style: solid;
+}
