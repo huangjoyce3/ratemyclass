@@ -141,7 +141,7 @@ var HomePage = React.createClass({
         }
 		return(
 				<div>
-					{!this.state.user &&
+					{!this.state.user && 
 	                    <div>
 	                        {authComponent}
 	                        <ToggleAuth handleClick={this.toggleLogin} authOption={this.state.authOption} />
@@ -149,7 +149,7 @@ var HomePage = React.createClass({
 
                 	}
 
-                	{!this.state.hasCourse &&
+                	{!this.state.hasCourse && this.state.user &&
 
                 	<div className="mainPage">
 	                	<div className="searchArea">
