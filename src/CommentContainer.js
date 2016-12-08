@@ -7,11 +7,15 @@ import firebase from 'firebase';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import ReChart from './ReChart';
+import EvalChart from './EvalChart';
+import $ from 'jquery';
+import Baby from 'babyparse';
 
 
 var CommentContainer = React.createClass({
 	getInitialState(){
-        return{reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"]}
+        return{reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
+        quarterSelected:'', courseEvals:[]}
     },
 
     componentDidMount(){
@@ -24,6 +28,10 @@ var CommentContainer = React.createClass({
 
 
         });
+        $.get('./data/sample.csv').then(function(data) {
+            var parsed = Baby.parse(data, {header:true});
+            this.setState({courseEvals:parsed.data})
+        }.bind(this));
 
     },
 
@@ -34,7 +42,6 @@ var CommentContainer = React.createClass({
         let isReview = {
             author:this.props.displayName,
         	course:this.props.courseNumber,
-            //Doesnt work... yet
             //quarter:event.target.elements['Select'].state,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
@@ -49,8 +56,14 @@ var CommentContainer = React.createClass({
 
     },
 
-    checkBoxChange(event){
-        this.setState({isChecked: event.target.checked});
+    //credit: http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript
+    getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
     },
 
 	render(){
@@ -65,6 +78,17 @@ var CommentContainer = React.createClass({
 		});
 		console.log(chartData)
 
+        let evalKeys = Object.keys(this.state.courseEvals).filter((d) => {
+            return this.state.courseEvals[d].course === this.props.courseNumber 
+            && this.state.courseEvals[d].instructor === 'Michael Freeman' 
+            && this.state.courseEvals[d].quarter === 'WI16'
+        });
+        
+        var courseEvalData = [];
+
+        courseEvalData = evalKeys.map((d) => {
+           return {name:this.state.courseEvals[d].Question, uv:+this.state.courseEvals[d].Median, pv: 5, fill:this.getRandomColor()}
+        });
 		// var workloadData = [];
 		// workloadData = reviewKeys.map((d) => {
 		// 	  return parseInt(this.state.reviews[d].workload, 10);
@@ -74,15 +98,18 @@ var CommentContainer = React.createClass({
 		var targetCourse = this.props.targetCourse;
 		return(
 			<div className="courseSec">
+        
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
 			
             <div className="chartSec">
             <ReChart chartData={chartData}/>
+            <EvalChart evalData={courseEvalData}/>
             </div>
 
             <CommentBox handleSubmit={this.createReview} quartersList={this.options}
                 aut={this.state.quarters[0]} win={this.state.quarters[1]}/>
+
 
             <div className="commentSec">
             {reviewKeys.map((d) => {
@@ -91,8 +118,8 @@ var CommentContainer = React.createClass({
 			})}
             </div>
 
-
 			</div>
+
 		);
 	}
 

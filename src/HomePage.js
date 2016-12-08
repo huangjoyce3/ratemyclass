@@ -7,10 +7,9 @@ import FirebaseConfig from './Config';
 import ToggleAuth from './ToggleAuth';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-
+import SignOut from './SignOut';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-
 import CommentContainer from './CommentContainer';
 
 var HomePage = React.createClass({
@@ -119,7 +118,9 @@ var HomePage = React.createClass({
     // Sign out of an account
     signOut() {
         firebase.auth().signOut().then(() => {
-            this.setState({user:null});
+            this.setState({authOption:'sign-in'});
+            this.setState({user:false});
+            this.setState({hasCourse:false});
         });
     },
 
@@ -141,19 +142,22 @@ var HomePage = React.createClass({
         }
 		return(
 				<div>
-					{!this.state.user && 
+					{!this.state.user &&
 	                    <div>
 	                        {authComponent}
 	                        <ToggleAuth handleClick={this.toggleLogin} authOption={this.state.authOption} />
 	                    </div>
-
                 	}
+
+                	{this.state.user &&
+	                    <SignOut submit={this.signOut}/>
+	                      
+         			}
 
                 	{!this.state.hasCourse && this.state.user &&
 
                 	<div className="mainPage">
 	                	<div className="searchArea">
-		                	{this.state.user && !this.state.hasCourse &&
 								<section>
 									<div className="title">
 										<h1>Rate My Class</h1>
@@ -167,7 +171,7 @@ var HomePage = React.createClass({
 									</div>
 									<p>{this.state.targetCourse.number}</p>
 								</section>
-							}
+							
 
 							{this.state.user && !this.state.hasResult &&
 								<div className="no-result">Class Not Found</div>
@@ -176,11 +180,12 @@ var HomePage = React.createClass({
 					</div>
 					}
 
-					{this.state.hasCourse &&
+					{this.state.hasCourse && 
 						<div className="coursePage">
 							<div className="searchClass">
+
 								<form onSubmit={this.setSearchString}>
-									<input type="text" placeholder="Search a course"/>
+									<input type="text" placeholder="Search a new course"/>
 									<button type="submit" className="searchCourse">Search</button>
 								</form>
 							</div>

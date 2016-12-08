@@ -1,0 +1,43 @@
+course,instructor,quarter,Question,Excellent,Very Good,Good,Fair,Poor,Very Poor,Median
+INFO 101,Bob Boiko,AU15,The course as a whole:,22%,27%,30%,14%,5%,2%,3.47
+INFO 101,Bob Boiko,AU15,Instructor's contribution:,23%,23%,24%,19%,8%,3%,3.3
+INFO 101,Bob Boiko,AU15,Instructor's effectiveness:,21%,23%,32%,11%,6%,6%,3.3
+INFO 101,Bob Boiko,AU15,The course content:,21%,23%,34%,16%,5%,2%,3.31
+INFO 101,Bob Boiko,SP16,The course as a whole:,59%,22%,14%,5%,0%,0%,4.66
+INFO 101,Bob Boiko,SP16,Instructor's contribution:,51%,30%,8%,8%,3%,0%,4.53
+INFO 101,Bob Boiko,SP16,Instructor's effectiveness:,58%,19%,14%,8%,0%,0%,4.64
+INFO 101,Bob Boiko,SP16,The course content:,57%,27%,8%,8%,0%,0%,4.62
+INFO 101,Bob Boiko,WI16,The course content:,41%,27%,30%,3%,0%,0%,4.15
+INFO 101,Bob Boiko,WI16,Instructor's contribution:,46%,22%,24%,8%,0%,0%,4.31
+INFO 101,Bob Boiko,WI16,The course as a whole:,46%,24%,27%,3%,0%,0%,4.33
+INFO 101,Bob Boiko,WI16,Instructor's effectiveness:,51%,19%,22%,8%,0%,0%,4.53
+INFO 102,Laura Schildkraut,SP16,Grading techniques:,21%,10%,24%,21%,7%,17%,2.71
+INFO 102,Laura Schildkraut,SP16,Amount learned:,22%,19%,22%,14%,16%,7%,3.12
+INFO 102,Laura Schildkraut,SP16,The course content:,20%,27%,24%,15%,8%,5%,3.39
+INFO 102,Laura Schildkraut,SP16,Instructor's effectiveness:,29%,22%,29%,8%,7%,5%,3.54
+INFO 102,Laura Schildkraut,SP16,The course as a whole:,22%,25%,25%,15%,8%,3%,3.4
+INFO 102,Laura Schildkraut,SP16,Instructor's contribution:,34%,29%,20%,7%,5%,5%,3.94
+INFO 102,Laura Schildkraut,SP16,Instuctor's interest:,36%,26%,24%,9%,5%,0%,3.97
+INFO 102,Negin Dahya,AU15,Instructor overall:,15%,17%,29%,25%,12%,2%,2.86
+INFO 102,Negin Dahya,AU15,Relevance and usefulness of homework:,11%,11%,26%,33%,17%,2%,2.43
+INFO 102,Negin Dahya,AU15,Instuctor's interest:,13%,20%,24%,33%,7%,4%,2.77
+INFO 102,Negin Dahya,AU15,Instructor's contribution:,10%,12%,27%,27%,17%,6%,2.5
+INFO 102,Negin Dahya,AU15,The course as a whole:,8%,12%,27%,31%,21%,0%,2.43
+INFO 102,Negin Dahya,AU15,Textbook overall:,10%,15%,31%,27%,17%,0%,2.7
+INFO 102,Negin Dahya,AU15,Amount learned:,7%,22%,17%,33%,20%,2%,2.37
+INFO 200,Beth Patin,SP16,The course as a whole:,53%,27%,20%,0%,0%,0%,4.56
+INFO 200,Beth Patin,SP16,The course content:,47%,33%,13%,7%,0%,0%,4.4
+INFO 200,Beth Patin,SP16,Instructor's effectiveness:,73%,13%,7%,7%,0%,0%,4.82
+INFO 200,Beth Patin,SP16,Instructor's contribution:,73%,13%,13%,0%,0%,0%,4.82
+INFO 200,David Stearns,AU15,Instructor's contribution:,95%,3%,2%,0%,0%,0%,4.97
+INFO 200,David Stearns,AU15,The course as a whole:,84%,13%,3%,0%,0%,0%,4.91
+INFO 200,David Stearns,AU15,Instructor's effectiveness:,94%,4%,2%,0%,0%,0%,4.97
+INFO 200,David Stearns,AU15,The course content:,81%,15%,4%,0%,0%,0%,4.88
+INFO 200,Michael Freeman,SP16,The course as a whole:,39%,30%,23%,2%,2%,4%,4.14
+INFO 200,Michael Freeman,SP16,Instructor's effectiveness:,42%,31%,18%,5%,1%,4%,4.23
+INFO 200,Michael Freeman,SP16,Instructor's contribution:,46%,31%,14%,5%,1%,2%,4.38
+INFO 200,Michael Freeman,SP16,The course content:,33%,32%,21%,6%,4%,4%,3.98
+INFO 200,Michael Freeman,WI16,Instructor's effectiveness:,40%,34%,18%,5%,1%,1%,4.2
+INFO 200,Michael Freeman,WI16,The course content:,26%,27%,30%,12%,3%,1%,3.63
+INFO 200,Michael Freeman,WI16,The course as a whole:,29%,33%,26%,8%,3%,1%,3.85
+INFO 200,Michael Freeman,WI16,Instructor's contribution:,42%,32%,22%,1%,1%,1%,4.26
