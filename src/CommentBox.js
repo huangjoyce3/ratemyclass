@@ -2,8 +2,6 @@ import React from 'react';
 import './css/CommentBox.css';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import $ from 'jquery';
-import Baby from 'babyparse';
 
 
 var CommentBox = React.createClass({
@@ -31,14 +29,19 @@ var CommentBox = React.createClass({
 		return(
             <div>
                 <div className="comment-form">
-                <div className="comment">
-        			<form onSubmit={this.props.handleSubmit}>
-                    	<div className="input-field col s12">
+                    <div className="comment">
+        			    <form onSubmit={this.props.handleSubmit}>
                             
                             <p>When did you take this class?</p>
-                            {<Select onChange={this.onChange}
+                            {/*<Select onChange={this.onChange}
                                 options={this.state.options}
-                                value={this.state.value} />}
+                                value={this.state.value} />*/}
+                            <select id='quarter'>
+                                <option value='Autumn'>Autumn</option>
+                                <option value='Winter'>Winter</option>
+                                <option value='Spring'>Spring</option>
+                                <option value='Summer'>Summer</option>
+                            </select>
 
                             <p>Who was your instructor?</p>
                             <input id="professor" placeholder="I took this class with.." type="text" className="validate" />
@@ -59,11 +62,9 @@ var CommentBox = React.createClass({
                             <p>The amount of workload if this class?</p>
                             <input id="workload" placeholder="1 (light) to 5 (heavy)" min="1" max="5" type="number" step="0.1" className="validate" />
 
-
-                        </div>
-                        <button type="submit" className="btn">Submit</button>
-                    </form>
-                </div>
+                            <button type="submit" className="btn">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 

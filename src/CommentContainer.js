@@ -44,7 +44,7 @@ var CommentContainer = React.createClass({
         let isReview = {
             author:this.props.displayName,
         	course:this.props.courseNumber,
-            //quarter:event.target.elements['Select'].state,
+            //quarter:event.target.elements['quarter'].state,
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
             anonymous:event.target.elements['anon'].value,
