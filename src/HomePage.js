@@ -180,7 +180,7 @@ var HomePage = React.createClass({
 						<div className="coursePage">
 							<div className="searchClass">
 								<form onSubmit={this.setSearchString}>
-									<input type="text" placeholder="Search a new course"/>
+									<input type="text" placeholder="Search a course"/>
 									<button type="submit" className="searchCourse">Search</button>
 								</form>
 							</div>

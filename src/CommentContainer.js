@@ -6,7 +6,7 @@ import './css/CommentContainer.css';
 import firebase from 'firebase';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import Chart from './Chart';
+import ReChart from './ReChart';
 
 
 var CommentContainer = React.createClass({
@@ -29,6 +29,7 @@ var CommentContainer = React.createClass({
 
     createReview(event){
         event.preventDefault();
+        console.log(+event.target.elements['difficulty'.value])
 
         let isReview = {
             author:this.props.displayName,
@@ -38,8 +39,8 @@ var CommentContainer = React.createClass({
             professor:event.target.elements['professor'].value,
             review:event.target.elements['review'].value,
             anonymous:event.target.elements['anon'].value,
-            difficulty:event.target.elements['difficulty'].value,
-            workload:event.target.elements['workload'].value,
+            difficulty:+(event.target.elements['difficulty'].value),
+            workload:+(event.target.elements['workload'].value),
             time:firebase.database.ServerValue.TIMESTAMP
         };
 
@@ -58,17 +59,17 @@ var CommentContainer = React.createClass({
 			return this.state.reviews[d].course === this.props.courseNumber
 		});
 
-		var difficultyData = [];
-		difficultyData = reviewKeys.map((d) => {
-			  return this.state.reviews[d].difficulty;
+		var chartData = [];
+		chartData = reviewKeys.map((d) => {
+			  return this.state.reviews[d]
 		});
-		console.log(difficultyData);
+		console.log(chartData)
 
-		var workloadData = [];
-		workloadData = reviewKeys.map((d) => {
-			  return this.state.reviews[d].workload;
-		});
-		console.log(workloadData)
+		// var workloadData = [];
+		// workloadData = reviewKeys.map((d) => {
+		// 	  return parseInt(this.state.reviews[d].workload, 10);
+		// });
+		// console.log(workloadData)
 
 		var targetCourse = this.props.targetCourse;
 		return(
@@ -81,7 +82,7 @@ var CommentContainer = React.createClass({
 				return <Comment key={d}
 						data={this.state.reviews[d]} />
 			})}
-			
+			<ReChart chartData={chartData}/>
 
 			</div>
 		);
