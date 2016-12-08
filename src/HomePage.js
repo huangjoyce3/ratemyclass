@@ -10,6 +10,7 @@ import SignIn from './SignIn';
 import SignOut from './SignOut';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
+import { Router } from 'react-router';
 import CommentContainer from './CommentContainer';
 
 var HomePage = React.createClass({
@@ -133,6 +134,9 @@ var HomePage = React.createClass({
 
 
 	render(){
+		const params = this.props.location.params;
+		console.log(this.context);
+
 		// Determine which 'authenticate' component should be shown
         if(this.state.authOption === 'sign-up') {
             var authComponent = <SignUp submit={this.signUp}/>

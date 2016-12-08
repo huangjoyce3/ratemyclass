@@ -19,7 +19,7 @@ var AllCourses = React.createClass({
 			<div className="coursesPage">
 				<h2 className="allTitle">Course Offerings in Informatics</h2>
 				<div className="infoCourses">
-					<p>All available courses:</p>
+					<p>Available courses in <b>Winter 2017</b>:</p>
 					<div className="courseList">
 						{this.state.courses.map(function(course, i){
 							return(
