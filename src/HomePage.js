@@ -197,7 +197,9 @@ var HomePage = React.createClass({
 							{this.state.user && !this.state.hasResult &&
 								<div className="no-result">Class Not Found</div>
 							}
-							
+
+							<hr></hr>
+
 							<CommentContainer 
 								displayName={this.state.user.displayName}
 								courseNumber={this.state.targetCourse.number}  

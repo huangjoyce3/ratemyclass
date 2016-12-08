@@ -75,6 +75,7 @@ button[type="submit"]:hover {
 .searchClass {
 	margin: 0 auto;
 	width: 60%;
+
 }
 
 .searchClass input[type="text"] {
@@ -91,6 +92,7 @@ button[type="submit"]:hover {
 
 .bar {
 	padding-left: 20px;
+	border-bottom: 1px solid black;
 }
 
 .searchClass .searchCourse {
