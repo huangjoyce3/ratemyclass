@@ -76,13 +76,21 @@ var CommentContainer = React.createClass({
 			<div className="courseSec">
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
-			<CommentBox handleSubmit={this.createReview} quartersList={this.options}
+			
+            <div className="chartSec">
+            <ReChart chartData={chartData}/>
+            </div>
+
+            <CommentBox handleSubmit={this.createReview} quartersList={this.options}
                 aut={this.state.quarters[0]} win={this.state.quarters[1]}/>
-			{reviewKeys.map((d) => {
+
+            <div className="commentSec">
+            {reviewKeys.map((d) => {
 				return <Comment key={d}
 						data={this.state.reviews[d]} />
 			})}
-			<ReChart chartData={chartData}/>
+            </div>
+
 
 			</div>
 		);

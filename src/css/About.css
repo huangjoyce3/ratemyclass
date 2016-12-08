@@ -1,0 +1,36 @@
+.image {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+}
+
+.member {
+	display: inline-block;
+	text-align: center;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.pictures {
+	display: table;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about h3 {
+	text-align: center;
+}
+
+.description {
+	margin: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}

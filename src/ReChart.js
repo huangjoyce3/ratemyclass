@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/ReChart.css'
 import {ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 

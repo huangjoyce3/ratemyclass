@@ -14,7 +14,7 @@ var Comment = React.createClass({
 		}
 
 		return(
-			<div>
+			<div className="allReview">
 				<div className='reviewSec'> 
 				<h5 id="reviewHeader">{displayName}</h5>           
 				<p className="reviews">

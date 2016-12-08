@@ -1,8 +1,6 @@
 .reviewSec {
-border:1px solid black;
-width:47%;
-margin-top: 20px;
-position: relative;
-margin-left: 20px;
-left:50%;
+	border:1px solid black;
+	margin: 10px 10px;
+	position: relative;
+	padding: 10px 20px;
 }
