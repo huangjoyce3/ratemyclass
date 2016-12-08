@@ -14,9 +14,11 @@ import Baby from 'babyparse';
 
 var CommentContainer = React.createClass({
 	getInitialState(){
-        return{reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
-        quarterSelected:'', courseEvals:[]}
-
+        return{
+            reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
+            quarterSelected:'', courseEvals:[], 
+            evalQuestions:["Course as a whole", "Instructor's contribution", "Instructor's effectiveness", "Course content"]
+        }
     },
 
     componentDidMount(){
@@ -27,16 +29,13 @@ var CommentContainer = React.createClass({
                 this.setState({reviews:snapshot.val()});
             }
         });
-        $.get('./data/sample.csv').then(function(data) {
-            var parsed = Baby.parse(data, {header:true});
-            this.setState({courseEvals:parsed.data})
-        }.bind(this));
 
-        $.get('./data/sample.csv').then(function(data) {
+        $.get('./data/uw_cec_informatics.csv').then(function(data) {
             var parsed = Baby.parse(data, {header:true});
             this.setState({courseEvals:parsed.data})
         }.bind(this));
     },
+
     createReview(event){
         event.preventDefault();
         console.log(+event.target.elements['difficulty'.value])
@@ -80,19 +79,44 @@ var CommentContainer = React.createClass({
 		});
 
         let evalKeys = Object.keys(this.state.courseEvals).filter((d) => {
-            return this.state.courseEvals[d].course === this.props.courseNumber 
-            && this.state.courseEvals[d].instructor === 'Michael Freeman' 
-            && this.state.courseEvals[d].quarter === 'WI16'
+            return this.state.courseEvals[d].course === this.props.courseNumber
         });
 
         console.log(this.state.courseEvals)
         console.log(evalKeys)
         var courseEvalData = [];
 
-        courseEvalData = evalKeys.map((d) => {
-           return {name:this.state.courseEvals[d].Question, uv:+this.state.courseEvals[d].Median, pv: 5, fill:this.getRandomColor()}
+        var q1sum = +0;
+        var q2sum = +0;
+        var q3sum = +0;
+        var q4sum = +0;
+        var counter = +0;
+
+        
+        var findSum = evalKeys.forEach((d) =>{
+            if(this.state.courseEvals[d].Question === this.state.evalQuestions[0]){
+                counter += 1;
+                q1sum = +q1sum + +this.state.courseEvals[d].Median;
+            }
+            if(this.state.courseEvals[d].Question === this.state.evalQuestions[1]){
+                q2sum = +q2sum + +this.state.courseEvals[d].Median;
+            }
+            if(this.state.courseEvals[d].Question === this.state.evalQuestions[2]){
+                q3sum = +q3sum + +this.state.courseEvals[d].Median;
+            }
+            if(this.state.courseEvals[d].Question === this.state.evalQuestions[3]){
+                q4sum = +q4sum + +this.state.courseEvals[d].Median;
+            }
         })
-        console.log(chartData)
+        var q1Average = q1sum / counter;
+        var q2Average = q2sum / counter;
+        var q3Average = q3sum / counter;
+        var q4Average = q4sum / counter;
+        courseEvalData = [{name:this.state.evalQuestions[0], uv:q1Average.toFixed(2), pv: 5, fill:this.getRandomColor()},
+                          {name:this.state.evalQuestions[1], uv:q2Average.toFixed(2), pv: 5, fill:this.getRandomColor()},
+                          {name:this.state.evalQuestions[2], uv:q3Average.toFixed(2), pv: 5, fill:this.getRandomColor()},
+                          {name:this.state.evalQuestions[3], uv:q4Average.toFixed(2), pv: 5, fill:this.getRandomColor()}]
+        
 		// var workloadData = [];
 		// workloadData = reviewKeys.map((d) => {
 		// 	  return parseInt(this.state.reviews[d].workload, 10);
