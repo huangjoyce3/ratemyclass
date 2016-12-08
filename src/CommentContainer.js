@@ -22,7 +22,7 @@ var CommentContainer = React.createClass({
     componentDidMount(){
         this.reviewRef = firebase.database().ref('reviews');
 
-        this.reviewRef.once('value', (snapshot) => {
+        this.reviewRef.on('value', (snapshot) => {
             if(snapshot.val()){
                 this.setState({reviews:snapshot.val()});
             }
