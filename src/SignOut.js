@@ -1,9 +1,14 @@
 import React from 'react';
+import './css/SignOut.css'
 
 var SignOut = React.createClass({
 	render(){
 		return(
-			<button onClick={this.props.submit} className="btn btn-primary sign-out">Sign Out</button>
+			<div className="outBtn">
+			<div className="needAcc">
+				<button onClick={this.props.submit} type="submit" className="upBtn">Sign Out</button>
+			</div>
+			</div>
 		);
 	}
 

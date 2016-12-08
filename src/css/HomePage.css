@@ -75,7 +75,6 @@ button[type="submit"]:hover {
 .searchClass {
 	margin: 0 auto;
 	width: 60%;
-
 }
 
 .searchClass input[type="text"] {
@@ -98,6 +97,7 @@ button[type="submit"]:hover {
 .searchClass .searchCourse {
 	display: table;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .coursePage .no-result {
@@ -107,4 +107,10 @@ button[type="submit"]:hover {
 	margin: 0 auto;
 	width: 15%;
 	margin-top: 15px;
+}
+
+hr {
+	height: 2px;
+	background-color: #c0ade4;
+	border: none;
 }
