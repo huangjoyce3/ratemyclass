@@ -78,6 +78,7 @@ var CommentContainer = React.createClass({
 			  return this.state.reviews[d]
 		});
 
+        //filter course eval data and average medians
         let evalKeys = Object.keys(this.state.courseEvals).filter((d) => {
             return this.state.courseEvals[d].course === this.props.courseNumber
         });
@@ -116,7 +117,7 @@ var CommentContainer = React.createClass({
                           {name:this.state.evalQuestions[1], uv:q2Average.toFixed(2), pv: 5, fill:this.getRandomColor()},
                           {name:this.state.evalQuestions[2], uv:q3Average.toFixed(2), pv: 5, fill:this.getRandomColor()},
                           {name:this.state.evalQuestions[3], uv:q4Average.toFixed(2), pv: 5, fill:this.getRandomColor()}]
-        
+
 		// var workloadData = [];
 		// workloadData = reviewKeys.map((d) => {
 		// 	  return parseInt(this.state.reviews[d].workload, 10);
