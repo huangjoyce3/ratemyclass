@@ -191,7 +191,7 @@ var HomePage = React.createClass({
 	                      
          			}
 
-                	{!this.state.hasCourse && this.state.user &&
+                	{this.state.user && this.props.route.foo === 'y' &&
 
                 	<div className="mainPage">
 	                	<div className="searchArea">
@@ -214,14 +214,18 @@ var HomePage = React.createClass({
 								</section>
 							
 
-							{this.state.user && !this.state.hasResult &&
+							{this.state.user && !this.state.hasResult && 
 								<div className="no-result">Class Not Found</div>
 							}
 						</div>
 					</div>
 					}
 
-					{this.state.hasCourse && 
+					{this.state.user && !this.state.hasResult &&
+						<div className="no-result">Class Not Found</div>
+					}
+
+					{this.state.hasCourse && this.props.route.foo !== 'y' &&
 						<div className="coursePage">
 							<div className="searchClass">
 
@@ -232,9 +236,6 @@ var HomePage = React.createClass({
 
 							</div>
 
-							{this.state.user && !this.state.hasResult &&
-								<div className="no-result">Class Not Found</div>
-							}
 
 							<hr></hr>
 
