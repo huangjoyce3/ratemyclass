@@ -19,13 +19,11 @@
         background-color: #4B2D87;
 }
 
-.link {
-    display: none;
-}
+
 
 @media screen and (min-width:600px) {
 
-    a.link {
+    a.navLink {
         color: white;
         padding-left: 10px;
         padding-right: 10px;
@@ -34,12 +32,12 @@
         border: 1px solid #4B2D87;
     }
 
-    .link:hover {
+    .navLink:hover {
         color: #4B2D87;
         background-color: white;
     }
 
-    a.link.active {
+    a.navLink.active {
         color: #4B2D87;
         background-color: white;
     }

@@ -10,8 +10,8 @@ var App = React.createClass({
 		return(
 			<div className="App">
 				<div className="navbar">
-					<Link className="link" id="main" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i>&nbsp;&nbsp;Main</Link>
-					<Link className="link" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i>&nbsp;&nbsp;About Us</Link>
+					<Link className="navLink" id="main" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i>&nbsp;&nbsp;Main</Link>
+					<Link className="navLink" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i>&nbsp;&nbsp;About Us</Link>
 				</div>
 
 				<div className="dropdown">
@@ -33,9 +33,9 @@ var App = React.createClass({
 		              zIndex:"2000",
 		            }}>
 		            <i className="fa fa-bars fa-2x"></i>
-		            <Link className="link" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i></Link>
-					<Link className="link" activeClassName='active' to="/AllCourses"><i className="fa fa-book"></i></Link>
-					<Link className="link" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i></Link>
+		            <Link className="dropLink" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i></Link>
+					<Link className="dropLink" activeClassName='active' to="/AllCourses"><i className="fa fa-book"></i></Link>
+					<Link className="dropLink" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i></Link>
 		        </Menu>
 				</div>
 				<div className="children">
