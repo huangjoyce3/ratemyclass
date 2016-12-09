@@ -10,7 +10,6 @@ var App = React.createClass({
 		return(
 			<div className="App">
 				<div className="navbar">
-					<Link className="navLink" id="main" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i>&nbsp;&nbsp;Main</Link>
 					<Link className="navLink" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i>&nbsp;&nbsp;About Us</Link>
 				</div>
 
@@ -33,7 +32,6 @@ var App = React.createClass({
 		              zIndex:"2000",
 		            }}>
 		            <i className="fa fa-bars fa-2x"></i>
-		            <Link className="dropLink" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i></Link>
 					<Link className="dropLink" activeClassName='active' to="/AllCourses"><i className="fa fa-book"></i></Link>
 					<Link className="dropLink" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i></Link>
 		        </Menu>
