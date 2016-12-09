@@ -8,10 +8,6 @@
     margin-top: -45px;
 }
 
-.signInPage .mainPage {
-    display: none;
-}
-
 .signTitle {
 	text-align: center;
     padding-top: 20px;
@@ -56,5 +52,31 @@ form.authenticate {
 }
 
 .signUpPage .input-field input[type=text] {
+     color: white;
+}
+
+.signUpPage .input-field input[type= email]:focus + label {
+     color: white;
+}
+
+.signUpPage .input-field input[type= password]:focus + label {
+     color: white;
+}
+
+.signUpPage .input-field input[type=email]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+}
+
+.signUpPage .input-field input[type=password]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+}
+
+.signUpPage .input-field input[type=email] {
+     color: white;
+}
+
+.signUpPage .input-field input[type=password] {
      color: white;
 }

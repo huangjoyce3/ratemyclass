@@ -37,3 +37,18 @@ a.link.active {
 .children {
     margin-top: 100px;
 }
+
+#main {
+    color: white;
+    background-color: #4B2D87;
+}
+
+#main:hover {
+    color: #4B2D87;
+    background-color: white;
+}
+
+#main:focus {
+    color: #4B2D87;
+    background-color: white;
+}

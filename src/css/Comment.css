@@ -5,3 +5,8 @@
 	position: relative;
 	padding: 10px 20px;
 }
+
+.reviewSec hr {
+	height: 1px;
+	background-color: #56339a;
+}

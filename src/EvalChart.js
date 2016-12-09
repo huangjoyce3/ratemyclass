@@ -19,10 +19,19 @@ var EvalChart = React.createClass({
 		  	lineHeight: '24px'
 		  };
 
+		  const styles = {
+		  	tab: {
+		    	backgroundColor: "#efd594",
+		    	color: "#56339a",
+		    	borderColor:"#56339a",
+		    	fontWeight:"bold",
+			},
+		  };
+
 		return(
 			<Tabs onSelect={this.handleSelect} selectedIndex={0}>
 
-			<TabList>
+			<TabList style={styles.tab}>
 			   <Tab>Course Evaluation</Tab>
 	           <Tab>Review</Tab>
 	        </TabList>

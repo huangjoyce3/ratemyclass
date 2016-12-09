@@ -1,0 +1,21 @@
+.dots {
+	display: table;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.chart input[type="text"] {
+	display: table;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    margin-top: -12px;
+    margin-bottom: 22px;
+    width: 50%;
+}
+
+.chart input[type="text"]:focus {
+    border: 1px solid black;
+}

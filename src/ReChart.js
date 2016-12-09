@@ -47,7 +47,7 @@ var ReChart = React.createClass({
 		return(
 	
 			<div className="chart">
-				<input className="search" placeholder="Type in an instructor..." onChange={this.filterData} />
+				<input type="text" className="search" placeholder="Type in an instructor..." onChange={this.filterData} />
 				<ScatterChart width={500} height={500}
 	            	margin={{top: 5, right: 30, left: 20, bottom: 5}}>
 	            <XAxis dataKey={'difficulty'} name='difficulty'/>
@@ -56,13 +56,13 @@ var ReChart = React.createClass({
 	            <CartesianGrid strokeDasharray="3 3" />
 	            <Tooltip cursor={{strokeDasharray: '3 3'}} />
 	            <Legend />
-	            </ScatterChart>  
-	            <button type="button" onClick={this.isCross}>Cross</button>
-	            <button type="button" onClick={this.isStar}>Star</button>
-	            <button type="button" onClick={this.isSquare}>Square</button>
-	            <button type="button" onClick={this.isCircle}>Circle</button>
-
-
+	            </ScatterChart>
+	            <div className="dots">  
+	            <button type="submit" onClick={this.isCross} className="searchCourse">Cross</button>
+	            <button type="submit" onClick={this.isStar} className="searchCourse">Star</button>
+	            <button type="submit" onClick={this.isSquare} className="searchCourse">Square</button>
+	            <button type="submit" onClick={this.isCircle} className="searchCourse">Circle</button>
+	            </div>
             </div>
 		)
 
