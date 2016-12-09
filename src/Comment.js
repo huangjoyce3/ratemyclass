@@ -12,7 +12,11 @@ var Comment = React.createClass({
 		}else{
 			displayName=this.props.data.author;
 		}
-		
+		var date = new Date(this.props.data.time);
+		var month = date.getMonth()+1;
+		var day = date.getDate()+1;
+		var year = date.getFullYear();
+		var dateString = month + '/' + day + '/' + year;
 		return(
 			<div className="allReview">
 				<div className='reviewSec'> 
@@ -20,7 +24,7 @@ var Comment = React.createClass({
 				<hr></hr>           
 				<p className="reviews">
 	                <span className="content"><b>{this.props.data.review}</b></span> 
-	                <p className="date">Date: {this.props.data.time}</p> 
+	                <p className="date">{dateString}</p> 
 	                <p className="course taken">User took this course in: {this.props.data.quarter}</p> 
 	                <p className="professor">Professor: {this.props.data.professor}</p>
 	                <p className="difficulty">Difficulty: {this.props.data.difficulty}</p>
