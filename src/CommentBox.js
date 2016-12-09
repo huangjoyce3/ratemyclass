@@ -31,7 +31,9 @@ var CommentBox = React.createClass({
                     <h4>Rate this Class</h4>
                     <div className="rateClass">
         			    <form onSubmit={this.props.handleSubmit}>
-                            
+                            <p>Write a review</p>
+                            <input required id="review" placeholder="Write a review" type="text" className="validate" />
+
                             <p>When did you take this class?</p>
                             <select required id='quarter'>
                                 <option value='Autumn'>Autumn</option>
@@ -50,10 +52,7 @@ var CommentBox = React.createClass({
                                 }
 
                             </select>
-                            <p>Write a review</p>
-                        	<input required id="review" placeholder="Write a review" type="text" className="validate" />
-
-
+                            
                             <p>Would you like to be anonymous?</p>
                             <select  id='anon'>
                                 <option value='n'>No</option>
