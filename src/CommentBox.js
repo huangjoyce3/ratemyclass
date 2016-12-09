@@ -65,6 +65,7 @@ var CommentBox = React.createClass({
 
                             <p>The amount of workload if this class?</p>
                             <input required id="workload" placeholder="1 (light) to 10 (unbearable)" min="1" max="10" type="number" step="0.5" className="validate" />
+
                             <button type="submit" className="searchCourse">Submit</button>
                         </form>
                     </div>

@@ -47,7 +47,13 @@ var ReChart = React.createClass({
 		return(
 	
 			<div className="chart">
+
+				<p>This scatter plot shows the difficulty and workload each reviewer feel about this class. Search for 
+				   a specific instructor by typing in the name of instructor. Click the four bottons below to change the 
+				   shape of the scatters as you like!</p>
 				<input type="text" className="search" placeholder="Type in an instructor..." onChange={this.filterData} />
+
+
 				<ScatterChart width={500} height={500}
 	            	margin={{top: 5, right: 30, left: 20, bottom: 5}}>
 	            <XAxis dataKey={'difficulty'} name='difficulty'/>

@@ -14,10 +14,12 @@ import Baby from 'babyparse';
 
 var CommentContainer = React.createClass({
 	getInitialState(){
+
         return{
             reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
             quarterSelected:'', courseEvals:[], 
             evalQuestions:["Course as a whole", "Instructor's contribution", "Instructor's effectiveness", "Course content"]}
+
     },
 
     componentDidMount(){
@@ -37,7 +39,9 @@ var CommentContainer = React.createClass({
 
     createReview(event){
         event.preventDefault();
-        console.log(+event.target.elements['difficulty'.value])
+        //this.setState({reviewed:!this.state.reviewed});
+        console.log(this.state.reviewed);
+
 
         let isReview = {
             author:this.props.displayName,

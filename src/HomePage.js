@@ -10,32 +10,37 @@ import SignIn from './SignIn';
 import SignOut from './SignOut';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import { Router } from 'react-router';
+import { Router, hashHistory } from 'react-router';
 import CommentContainer from './CommentContainer';
 
 var HomePage = React.createClass({
 	getInitialState(){
+		
 		return{data:[], searchString:'', targetCourse:[], checked:false, 
 			   user:null, authOption:'sign-in', hasCourse:false, hasResult:true,
 			}
 	},
 
 	componentDidMount(){
-		 // Initialize app
-        firebase.initializeApp(FirebaseConfig);
+		var self = this;
 
-        // Check for authentication state change (test if there is a user)
-        firebase.auth().onAuthStateChanged((user) => {
-            if (this.state.checked !== true) {
-                if(user) {
-                    this.setState({user:user})
-                }
-            }
+		if (firebase.apps.length === 0) {
+			 // Initialize app
+	        firebase.initializeApp(FirebaseConfig);
 
-            // Indicate that state has been checked
-            this.setState({checked:true})
-        });
+	        // Check for authentication state change (test if there is a user)
+	        firebase.auth().onAuthStateChanged((user) => {
+	            if (this.state.checked !== true) {
+	                if(user) {
+	                    this.setState({user:user})
+	                }
+	            }
 
+	            // Indicate that state has been checked
+	            this.setState({checked:true})
+	        });
+			
+		} 
 		$.get('./data/info_time_schedule_winter_2017.csv').then(function(data) {
 			var parsed = Baby.parse(data, {header:true});
 			var classes = {};
@@ -45,23 +50,34 @@ var HomePage = React.createClass({
 			this.setState({classes: classes});
 			console.log(classes);
 			this.setState({data:parsed.data});
+
+
+			if (self.props.params && self.props.params.hasOwnProperty('searchString') && self.props.params.searchString !== '') {
+				self.getCourse(self.props.params.searchString);
+			}
 		}.bind(this));
+
+		if (self.state.classes) {
+			if (self.props.params && self.props.params.hasOwnProperty('searchString') && self.props.params.searchString !== '') {
+				self.getCourse(self.props.params.searchString);
+			}
+		}
+
 	},
 
 	setSearchString(event){
-		console.log('hi');
 		event.preventDefault();
 		var value = event.target.childNodes[0].value;
 		value = value.toUpperCase();
-		this.setState({searchString:value});
-		this.getCourse(value);
-
+		//this.setState({searchString:value});
+		//this.getCourse(value);
+		hashHistory.push('/course/' + value);
 
 	},
 
 	getCourse(searchString){
 		var self = this;
-		if(searchString !== ''){
+		if(searchString !== '' && self.state.classes){
 
 			if ( self.state.classes.hasOwnProperty(searchString) ) {
 				var targetClass = self.state.classes[searchString];
@@ -71,6 +87,15 @@ var HomePage = React.createClass({
 
 			}
 		}
+	},
+
+
+	componentWillReceiveProps(nextProps) {
+		var self = this;
+
+		console.log(self.props, nextProps);
+		self.getCourse(nextProps.params.searchString);
+		
 	},
 
 
@@ -123,6 +148,7 @@ var HomePage = React.createClass({
             this.setState({user:false});
             this.setState({hasCourse:false});
         });
+
     },
 
     // Toggle between 'sign-up' and 'sign-in'
@@ -134,8 +160,9 @@ var HomePage = React.createClass({
 
 
 	render(){
-		const params = this.props.location.params;
-		console.log(this.context);
+		var target = this.props.location.query;
+		console.log(target);
+
 
 		// Determine which 'authenticate' component should be shown
         if(this.state.authOption === 'sign-up') {
