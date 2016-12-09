@@ -10,3 +10,8 @@
 	height: 1px;
 	background-color: #56339a;
 }
+
+.date {
+	float: right;
+	margin-top: -40px;
+}
