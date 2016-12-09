@@ -14,7 +14,7 @@ var Comment = React.createClass({
 		}
 		var date = new Date(this.props.data.time);
 		var month = date.getMonth()+1;
-		var day = date.getDate()+1;
+		var day = date.getDate();
 		var year = date.getFullYear();
 		var dateString = month + '/' + day + '/' + year;
 		return(
