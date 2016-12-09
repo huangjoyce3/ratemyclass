@@ -72,9 +72,11 @@ var CommentContainer = React.createClass({
 
 	render(){
 
-		let reviewKeys = Object.keys(this.state.reviews).filter((d) => {
+		let reviewKeyss = Object.keys(this.state.reviews).filter((d) => {
 			return this.state.reviews[d].course === this.props.courseNumber
 		});
+
+		var reviewKeys = reviewKeyss.reverse();
 
 		var chartData = [];
 		chartData = reviewKeys.map((d) => {
