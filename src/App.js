@@ -8,7 +8,7 @@ var App = React.createClass({
 		return(
 			<div className="App">
 				<div className="navbar">
-					<Link className="link" id="main" activeClassName='active' to="/"><i className="fa fa-home"></i>Main</Link>
+					<Link className="link" id="main" activeClassName='active' to="/HomePage"><i className="fa fa-home"></i>Main</Link>
 					<Link className="link" activeClassName='active' to="/AllCourses">See All Courses</Link>
 					<Link className="link" activeClassName='active' to="/About">About Us</Link>
 				</div>
