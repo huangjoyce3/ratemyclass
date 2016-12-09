@@ -5,25 +5,23 @@ import 'react-select/dist/react-select.css';
 
 
 var CommentBox = React.createClass({
-    getInitialState() {
-        return{
-            quarters: [{radioValue:'Autumn'},{radioValue:'Winter'}],
-            options: [
-                { value: 'autumn', label: 'Autumn' },
-                { value: 'winter', label: 'Winter' },
-                { value: 'spring', label: 'Spring' },
-                { value: 'summer', label: 'Summer' },
-            ]           
-        }
+    getInitialState () {
+        return {
+            isChecked: false
+        };
     },
-    onChange(value){
-        this.setState({value});
+    
+    handleChange(){
+        this.setState({isChecked: event.target.checked});
+    },
+    
+    toggleIsChecked() {
+        this.setState({isChecked: !this.state.isChecked});
     },
 
-    onQuartersChanged (event) {
-        console.log(this.state.quarter)
-    this.setState({quarter:event.target.value});
-  },
+    handleButtonClick(event) {
+        this.toggleIsChecked();
+    },
 
 	render(){
 		return(
@@ -35,9 +33,6 @@ var CommentBox = React.createClass({
         			    <form onSubmit={this.props.handleSubmit}>
                             
                             <p>When did you take this class?</p>
-                            {/*<Select onChange={this.onChange}
-                                options={this.state.options}
-                                value={this.state.value} />*/}
                             <select id='quarter'>
                                 <option value='Autumn'>Autumn</option>
                                 <option value='Winter'>Winter</option>
@@ -52,17 +47,17 @@ var CommentBox = React.createClass({
                         	<input id="review" placeholder="Write a review" type="text" className="validate" />
 
 
-                            <p>Would you like to be anonymous? (Users cannot contact you)</p>
-                                {/*<input type="checkbox" id="no" onChange={this.props.handleChange} checked={this.state.isChecked}/>
-                                    <label for="no">No</label>
-                                <input type="checkbox" id="yes" value="yes"/>
-                                    <label for="yes">Yes</label>*/}
-                            <input id="anon" placeholder="Y/N" type="text" className="validate" />
+                            <p>Would you like to be anonymous?</p>
+                            <select id='anon'>
+                                <option value='y'>Yes</option>
+                                <option value='n' selected>No</option>
+                            </select>
+
                             <p>Difficulty of this class?</p>
-                            <input id="difficulty" placeholder="1 (easy) to 5 (hard)" min="1" max="10" type="number" step="0.5" className="validate"/>
+                            <input id="difficulty" placeholder="1 (easy breezy) to 10 (challenging)" min="1" max="10" type="number" step="0.5" className="validate"/>
 
                             <p>The amount of workload if this class?</p>
-                            <input id="workload" placeholder="1 (light) to 5 (heavy)" min="1" max="10" type="number" step="0.5" className="validate" />
+                            <input id="workload" placeholder="1 (light) to 10 (unbearable)" min="1" max="10" type="number" step="0.5" className="validate" />
                             <button type="submit" className="searchCourse">Submit</button>
                         </form>
                     </div>

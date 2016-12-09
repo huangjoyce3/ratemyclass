@@ -145,73 +145,73 @@ var HomePage = React.createClass({
              authComponent = <SignIn submit={this.signIn}/>
         }
 		return(
-				<div>
-					{!this.state.user &&
-	                    <div>
-	                        {authComponent}
-	                        <ToggleAuth handleClick={this.toggleLogin} authOption={this.state.authOption} />
-	                    </div>
-                	}
+			<div>
+				{!this.state.user &&
+                    <div>
+                        {authComponent}
+                        <ToggleAuth handleClick={this.toggleLogin} authOption={this.state.authOption} />
+                    </div>
+            	}
 
-                	{this.state.user &&
-	                    <SignOut submit={this.signOut}/>
-	                      
-         			}
+            	{this.state.user &&
+                    <SignOut submit={this.signOut}/>
+                      
+     			}
 
-                	{!this.state.hasCourse && this.state.user &&
+            	{!this.state.hasCourse && this.state.user &&
 
-                	<div className="mainPage">
-	                	<div className="searchArea">
-								<section>
-									<div className="title">
-										<h1>Rate My Class</h1>
-										<h4>Find the perfect class!</h4>
-									</div>
-									<div className="searchBar">
-										<form onSubmit={this.setSearchString}>
-											<input type="text" placeholder="Search a course"/>
-										    <button type="submit" className="searchCourse">Search</button>
-										</form>
-									</div>
-									<p>{this.state.targetCourse.number}</p>
-								</section>
-							
+            	<div className="mainPage">
+                	<div className="searchArea">
+							<section>
+								<div className="title">
+									<h1>Rate My Class</h1>
+									<h4>Find the perfect class!</h4>
+								</div>
+								<div className="searchBar">
+									<form onSubmit={this.setSearchString}>
+										<input type="text" placeholder="Search a course"/>
+									    <button type="submit" className="searchCourse">Search</button>
+									</form>
+								</div>
+								<p>{this.state.targetCourse.number}</p>
+							</section>
+						
 
-							{this.state.user && !this.state.hasResult &&
-								<div className="no-result">Class Not Found</div>
-							}
-						</div>
+						{this.state.user && !this.state.hasResult &&
+							<div className="no-result">Class Not Found</div>
+						}
 					</div>
-					}
+				</div>
+				}
 
-					{this.state.hasCourse && 
-						<div className="coursePage">
-							<div className="searchClass">
+				{this.state.hasCourse && 
+					<div className="coursePage">
+						<div className="searchClass">
 
-								<form onSubmit={this.setSearchString}>
-									<input type="text" placeholder="Search a new course"/>
-									<button type="submit" className="searchCourse">Search</button>
-								</form>
-							</div>
-
-							{this.state.user && !this.state.hasResult &&
-								<div className="no-result">Class Not Found</div>
-							}
-
-							<hr></hr>
-
-							<CommentContainer 
-								displayName={this.state.user.displayName}
-								courseNumber={this.state.targetCourse.number}  
-								courseName={this.state.targetCourse.name}
-								courseType={this.state.targetCourse.type}
-								courseCredits={this.state.targetCourse.credits}
-							/>
+							<form onSubmit={this.setSearchString}>
+								<input type="text" placeholder="Search a new course"/>
+								<button type="submit" className="searchCourse">Search</button>
+							</form>
 						</div>
 
-					}
-					
-	        </div>
+						{this.state.user && !this.state.hasResult &&
+							<div className="no-result">Class Not Found</div>
+						}
+
+						<hr></hr>
+
+						<CommentContainer 
+							displayName={this.state.user.displayName}
+							courseNumber={this.state.targetCourse.number}  
+							courseName={this.state.targetCourse.name}
+							courseType={this.state.targetCourse.type}
+							courseCredits={this.state.targetCourse.credits}
+						/>
+					</div>
+
+				}
+				
+        </div>
 		);
 	}
 

@@ -2,8 +2,6 @@ import React from 'react';
 import './css/Comment.css';
 
 var Comment = React.createClass({
-
-	
 	render(){
 		//Anonymous function
 		let displayName;
