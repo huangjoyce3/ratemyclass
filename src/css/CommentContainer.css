@@ -27,5 +27,9 @@
 
 .chartSec {
 	border: 4px double #daa520;
+	width: 65%;
+	display: table;
+	margin: 0 auto;
 	margin-top: 15px;
+	height: 50%;
 }

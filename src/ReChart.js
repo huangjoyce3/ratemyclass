@@ -45,8 +45,7 @@ var ReChart = React.createClass({
 		}
 
 		return(
-
-			
+	
 			<div className="chart">
 				<input className="search" placeholder="Type in an instructor..." onChange={this.filterData} />
 				<ScatterChart width={500} height={500}
@@ -65,7 +64,6 @@ var ReChart = React.createClass({
 
 
             </div>
-          
 		)
 
 	}
