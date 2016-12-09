@@ -18,7 +18,7 @@ import { IndexRoute, Router, Route, hashHistory } from 'react-router';
 ReactDOM.render(
         <Router history={hashHistory}>
             <Route path="/" component={App}>
-                <IndexRoute component={HomePage}/>
+                <IndexRoute foo="y" component={HomePage}/>
                 <Route path="/HomePage" foo="y" component={HomePage}/>
                 <Route path="/About" component={About}/>
                 <Route path="/course/:searchString" component={HomePage}/>
