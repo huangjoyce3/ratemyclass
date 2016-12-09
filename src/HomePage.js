@@ -215,6 +215,10 @@ var HomePage = React.createClass({
 									}
 
 								</section>
+								
+								{this.state.user && !this.state.hasResult && 
+									<div className="no-result">Class Not Found</div>
+								}
 							
 
 
@@ -222,9 +226,6 @@ var HomePage = React.createClass({
 					</div>
 					}
 
-					{this.state.user && !this.state.hasResult && 
-						<div className="no-result">Class Not Found</div>
-					}
 
 					{this.state.hasCourse && 
 						<div className="coursePage">
@@ -236,6 +237,11 @@ var HomePage = React.createClass({
 								</form>
 
 							</div>
+
+
+							{this.state.user && !this.state.hasResult &&
+								<div className="no-result">Class Not Found</div>
+							}
 
 
 							<hr></hr>
