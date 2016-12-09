@@ -5,13 +5,33 @@ import {ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend} fro
 
 var ReChart = React.createClass({
 	getInitialState(){
-		return {search:''}
+		return {search:'', shape:''}
 	},
 
 	filterData(event){
 		var value = event.target.value;
 		this.setState({search:value})
 
+	},
+
+	isCross(){
+		console.log('hi');
+		this.setState({shape:'cross'})
+
+	},
+
+	isStar(){
+		this.setState({shape:'star'})
+
+	},
+
+	isSquare(){
+		this.setState({shape:'square'})
+
+	},
+
+	isCircle(){
+		this.setState({shape:'circle'})
 	},
 
 
@@ -33,11 +53,17 @@ var ReChart = React.createClass({
 	            	margin={{top: 5, right: 30, left: 20, bottom: 5}}>
 	            <XAxis dataKey={'difficulty'} name='difficulty'/>
 	            <YAxis dataKey={'workload'} name='workload'/>
-	            <Scatter name='review' data={data} fill='red' opacity='0.3' />
+	            <Scatter name='reviews' data={data} fill='red' opacity='0.3' shape={this.state.shape} />
 	            <CartesianGrid strokeDasharray="3 3" />
 	            <Tooltip cursor={{strokeDasharray: '3 3'}} />
 	            <Legend />
 	            </ScatterChart>  
+	            <button type="button" onClick={this.isCross}>Cross</button>
+	            <button type="button" onClick={this.isStar}>Star</button>
+	            <button type="button" onClick={this.isSquare}>Square</button>
+	            <button type="button" onClick={this.isCircle}>Circle</button>
+
+
             </div>
           
 		)

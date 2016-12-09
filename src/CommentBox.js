@@ -59,10 +59,10 @@ var CommentBox = React.createClass({
                                     <label for="yes">Yes</label>*/}
                             <input id="anon" placeholder="Y/N" type="text" className="validate" />
                             <p>Difficulty of this class?</p>
-                            <input id="difficulty" placeholder="1 (easy) to 5 (hard)" min="1.0" max="5.0" type="number" step="0.1" className="validate"/>
+                            <input id="difficulty" placeholder="1 (easy) to 5 (hard)" min="1" max="10" type="number" step="0.5" className="validate"/>
 
                             <p>The amount of workload if this class?</p>
-                            <input id="workload" placeholder="1 (light) to 5 (heavy)" min="1" max="5" type="number" step="0.1" className="validate" />
+                            <input id="workload" placeholder="1 (light) to 5 (heavy)" min="1" max="10" type="number" step="0.5" className="validate" />
                             <button type="submit" className="searchCourse">Submit</button>
                         </form>
                     </div>
