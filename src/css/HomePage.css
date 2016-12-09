@@ -16,6 +16,7 @@
 	top: 100px;
 	padding-bottom: 30px;
 	width: 90%;
+	
 }
 
 .title {
@@ -40,7 +41,7 @@
 
 .searchBar {
 	margin-left: 90px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .searchCourse {
@@ -113,6 +114,19 @@ button[type="submit"]:hover {
 		border: none;
 	}
 
+	.searchArea h5 {
+		color: white;
+		font-weight: bold;
+		display: table;
+		margin: 0 auto;
+	}
+
+	.seeCourse {
+		display: table;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
 @media screen and (min-width:600px) {
 
 	.searchArea {
@@ -123,6 +137,5 @@ button[type="submit"]:hover {
 		margin-left: 150px;
 		margin-right: 230px;
 	}
-
 	
 }

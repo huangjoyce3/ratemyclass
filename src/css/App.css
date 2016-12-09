@@ -19,11 +19,7 @@
         background-color: #4B2D87;
 }
 
-
-
-@media screen and (min-width:600px) {
-
-    a.navLink {
+    a.Link {
         color: white;
         padding-left: 10px;
         padding-right: 10px;
@@ -32,12 +28,12 @@
         border: 1px solid #4B2D87;
     }
 
-    .navLink:hover {
+    .Link:hover {
         color: #4B2D87;
         background-color: white;
     }
 
-    a.navLink.active {
+    a.Link.active {
         color: #4B2D87;
         background-color: white;
     }
@@ -56,8 +52,3 @@
         color: #4B2D87;
         background-color: white;
     }
-
-    .dropdown {
-        display: none;
-    }
-}

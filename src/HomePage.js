@@ -209,7 +209,10 @@ var HomePage = React.createClass({
 										    <button type="submit" className="searchCourse">Search</button>
 										</form>
 									</div>
-									<button type="button" onClick={this.showCourses}>Show All Courses</button>
+									<h5>OR</h5>
+									<div className="seeCourse">
+									<button type="submit" className="searchCourse" onClick={this.showCourses}>See All Courses</button>
+									</div>
 									{this.state.showCourses &&
 										<AllCourses />
 									}

@@ -11,30 +11,7 @@ var App = React.createClass({
 		return(
 			<div className="App">
 				<div className="navbar">
-				</div>
-
-				<div className="dropdown">
-				<Menu
-		            direction="vertical"
-		            distance={80}
-		            width={50}
-		            height={50}
-		            y={-48}
-		            x={10}
-		            customStyle={{
-		              color: "#fff",
-		              textAlign:"center",
-		              lineHeight:"50px",
-		              backgroundColor: "#B3A36F",
-		              border: "solid 1px #82734A",
-		              boxShadow: "1px 1px #82734A",
-		              borderRadius: "50%",
-		              zIndex:"2000",
-		            }}>
-		            <i className="fa fa-bars fa-2x"></i>
-					<Link className="dropLink" activeClassName='active' to="/AllCourses"><i className="fa fa-book"></i></Link>
-					<Link className="dropLink" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i></Link>
-		        </Menu>
+					<Link className="Link" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i>&nbsp;&nbsp;About Us</Link>
 				</div>
 				<div className="children">
 					{this.props.children}
