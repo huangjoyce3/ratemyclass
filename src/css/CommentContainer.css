@@ -5,7 +5,7 @@
 }
 
 .commentSec {
-	border: 1px solid black;
+	border: 4px double #daa520;
 	margin-top: 20px;
 	position: relative;
 	max-height: 696px;
@@ -14,7 +14,18 @@
 	overflow: auto;
 	margin-bottom: 10px;
 }
+
+.commentSec h4 {
+	background: rgba(218, 165, 32, 0.5);
+	text-align: center;
+	color: #56339a;
+	margin-top: -1px;
+	height: 60px;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
 .chartSec {
-	border: 1px solid black;
+	border: 4px double #daa520;
 	margin-top: 15px;
 }

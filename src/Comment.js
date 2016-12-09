@@ -18,7 +18,8 @@ var Comment = React.createClass({
 		return(
 			<div className="allReview">
 				<div className='reviewSec'> 
-				<h5 id="reviewHeader">{displayName}</h5>           
+				<h5 id="reviewHeader">{displayName}</h5>
+				<hr></hr>           
 				<p className="reviews">
 	                <span className="content"><b>{this.props.data.review}</b></span> 
 	                <p className="date">Date: {this.props.data.time}</p> 

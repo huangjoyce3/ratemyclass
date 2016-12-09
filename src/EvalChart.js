@@ -2,8 +2,8 @@ import React from 'react';
 import {RadialBarChart, RadialBar, Tooltip, Legend} from 'recharts';
 import {Radar, RadarChart, PolarGrid,PolarAngleAxis, PolarRadiusAxis} from 'recharts';
 
-
 var EvalChart = React.createClass({
+	
 
 	render() {
 		const style = {
@@ -12,6 +12,7 @@ var EvalChart = React.createClass({
 		  	lineHeight: '24px'
 		  };
 		return(
+			
 			<div className="chart">
 				<RadialBarChart title='Course Eval' width={500} height={300} cx={150} cy={150}
 					innerRadius={20} outerRadius={140} barSize={10} data={this.props.evalData}>
@@ -27,6 +28,7 @@ var EvalChart = React.createClass({
 		          <Tooltip cursor={{strokeDasharray: '3 3'}} />
 		        </RadarChart>
             </div>
+            
 		)
 
 	}

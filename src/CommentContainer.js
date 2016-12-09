@@ -12,6 +12,7 @@ import $ from 'jquery';
 import Baby from 'babyparse';
 
 
+
 var CommentContainer = React.createClass({
 	getInitialState(){
         return{reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
@@ -100,13 +101,14 @@ var CommentContainer = React.createClass({
 		// console.log(workloadData)
 
 		var targetCourse = this.props.targetCourse;
+
+        
 		return(
 			<div className="courseSec">
         
 			<CourseInfo number={this.props.courseNumber} name={this.props.courseName} 
 								type={this.props.courseType} credits={this.props.courseCredits} />
 
-			
             <div className="chartSec">
             <ReChart chartData={chartData}/>
             <EvalChart evalData={courseEvalData}/>
@@ -117,6 +119,7 @@ var CommentContainer = React.createClass({
 
 
             <div className="commentSec">
+            <h4>What people say...</h4>
             {reviewKeys.map((d) => {
 				return <Comment key={d}
 						data={this.state.reviews[d]} />

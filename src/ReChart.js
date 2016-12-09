@@ -14,6 +14,7 @@ var ReChart = React.createClass({
 
 	},
 
+
 	render() {
 		var data = this.props.chartData,
 			search = this.state.search.trim().toLowerCase();
@@ -24,6 +25,8 @@ var ReChart = React.createClass({
 		}
 
 		return(
+
+			
 			<div className="chart">
 				<input className="search" placeholder="Type in an instructor..." onChange={this.filterData} />
 				<ScatterChart width={500} height={500}
@@ -34,8 +37,9 @@ var ReChart = React.createClass({
 	            <CartesianGrid strokeDasharray="3 3" />
 	            <Tooltip cursor={{strokeDasharray: '3 3'}} />
 	            <Legend />
-	            </ScatterChart>
+	            </ScatterChart>  
             </div>
+          
 		)
 
 	}

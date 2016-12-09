@@ -1,5 +1,6 @@
 .reviewSec {
-	border:1px solid black;
+	background: rgba(86, 51, 154, 0.1);
+	border: 1px dotted #56339a;
 	margin: 10px 10px;
 	position: relative;
 	padding: 10px 20px;
