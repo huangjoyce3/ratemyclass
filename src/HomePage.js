@@ -12,12 +12,16 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import { Router, hashHistory } from 'react-router';
 import CommentContainer from './CommentContainer';
+import AllCourses from './AllCourses';
 
 var HomePage = React.createClass({
 	getInitialState(){
 		
 		return{data:[], searchString:'', targetCourse:[], checked:false, 
 			   user:null, authOption:'sign-in', hasCourse:false, hasResult:true,
+			   showCourses:false
+
+
 			}
 	},
 
@@ -156,11 +160,14 @@ var HomePage = React.createClass({
         this.setState({authOption:option});
     },
 
+    showCourses() {
+    	this.setState({showCourses:!this.state.showCourses});
+
+    },
+
 
 
 	render(){
-		var target = this.props.location.query;
-		console.log(target);
 
 
 		// Determine which 'authenticate' component should be shown
@@ -199,7 +206,11 @@ var HomePage = React.createClass({
 										    <button type="submit" className="searchCourse">Search</button>
 										</form>
 									</div>
-									<p>{this.state.targetCourse.number}</p>
+									<button type="button" onClick={this.showCourses}>Show All Courses</button>
+									{this.state.showCourses &&
+										<AllCourses />
+									}
+
 								</section>
 							
 
@@ -218,6 +229,7 @@ var HomePage = React.createClass({
 									<input type="text" placeholder="Search a new course"/>
 									<button type="submit" className="searchCourse">Search</button>
 								</form>
+
 							</div>
 
 							{this.state.user && !this.state.hasResult &&
