@@ -6,7 +6,6 @@ import './css/CommentContainer.css';
 import firebase from 'firebase';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import ReChart from './ReChart';
 import EvalChart from './EvalChart';
 import $ from 'jquery';
 import Baby from 'babyparse';
@@ -110,8 +109,7 @@ var CommentContainer = React.createClass({
 								type={this.props.courseType} credits={this.props.courseCredits} />
 
             <div className="chartSec">
-            <ReChart chartData={chartData}/>
-            <EvalChart evalData={courseEvalData}/>
+            <EvalChart evalData={courseEvalData} chartData={chartData}/>
             </div>
 
             <CommentBox handleSubmit={this.createReview} quartersList={this.options}

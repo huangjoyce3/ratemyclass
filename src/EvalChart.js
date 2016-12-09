@@ -1,11 +1,13 @@
 import React from 'react';
 import {RadialBarChart, RadialBar, Tooltip, Legend} from 'recharts';
 import {Radar, RadarChart, PolarGrid,PolarAngleAxis, PolarRadiusAxis} from 'recharts';
+import ReChart from './ReChart';
+
 
 var EvalChart = React.createClass({
-	
-
 	render() {
+
+
 		const style = {
 		  	top: 0,
 		  	left: 350,
@@ -27,8 +29,9 @@ var EvalChart = React.createClass({
 		          <PolarRadiusAxis/>
 		          <Tooltip cursor={{strokeDasharray: '3 3'}} />
 		        </RadarChart>
-            </div>
-            
+		        <ReChart chartData={this.props.chartData}/>
+		    </div>
+
 		)
 
 	}
