@@ -15,7 +15,7 @@
 	position: relative;
 	top: 100px;
 	padding-bottom: 30px;
-	width: 540px;
+	width: 90%;
 }
 
 .title {
@@ -68,49 +68,61 @@ button[type="submit"]:hover {
 	color: white;
 	background-color: #ff4d4d;
 	text-align: center;
-	margin-left: 150px;
-	margin-right: 230px;
 }
 
 .searchClass {
-	margin: 0 auto;
-	width: 60%;
-}
+		margin: 0 auto;
+		width: 60%;
+	}
 
-.searchClass input[type="text"] {
-	border: 1px solid black;
-	border-radius: 30px;
-    text-align: center;
-    background-color: white;
-    margin-top: -12px;
-}
+	.searchClass input[type="text"] {
+		border: 1px solid black;
+		border-radius: 30px;
+	    text-align: center;
+	    background-color: white;
+	    margin-top: -12px;
+	}
 
-.searchClass input[type="text"]:focus {
-    border: 1px solid black;
-}
+	.searchClass input[type="text"]:focus {
+	    border: 1px solid black;
+	}
 
-.bar {
-	padding-left: 20px;
-	border-bottom: 1px solid black;
-}
+	.bar {
+		padding-left: 20px;
+		border-bottom: 1px solid black;
+	}
 
-.searchClass .searchCourse {
-	display: table;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
+	.searchClass .searchCourse {
+		display: table;
+	    margin: 0 auto;
+	    margin-bottom: 15px;
+	}
 
-.coursePage .no-result {
-	color: white;
-	background-color: #ff4d4d;
-	text-align: center;
-	margin: 0 auto;
-	width: 15%;
-	margin-top: 15px;
-}
+	.coursePage .no-result {
+		color: white;
+		background-color: #ff4d4d;
+		text-align: center;
+		margin: 0 auto;
+		width: 15%;
+		margin-top: 15px;
+	}
 
-hr {
-	height: 2px;
-	background-color: #c0ade4;
-	border: none;
+	hr {
+		height: 2px;
+		background-color: #c0ade4;
+		border: none;
+	}
+
+@media screen and (min-width:600px) {
+
+	.searchArea {
+		width: 540px;
+	}
+
+	.searchArea .no-result {
+		margin-left: 150px;
+		margin-right: 230px;
+	}
+
+	
 }

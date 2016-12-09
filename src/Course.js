@@ -15,10 +15,10 @@ var Course = React.createClass({
         return (
         	<div className="flex-item box" id="eachCourse">
             <div className="allCourse">
-            <button onClick={this.btnClick} type="submit" className="btn">{this.props.number}</button>
+            <ul><button onClick={this.btnClick} type="submit" className="btn">{this.props.number}</button>
         	<span>&nbsp;{this.props.name}</span>
         	<span>({this.props.credits})</span>
-        	<span>{this.props.type}</span>
+        	<span>{this.props.type}</span></ul>
         	</div>
             </div>
         )
