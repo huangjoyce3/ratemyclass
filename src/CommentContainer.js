@@ -17,8 +17,7 @@ var CommentContainer = React.createClass({
         return{
             reviews:[], isChecked:'', quarters:["Autumn","Winter","Spring","Summer"],
             quarterSelected:'', courseEvals:[], 
-            evalQuestions:["Course as a whole", "Instructor's contribution", "Instructor's effectiveness", "Course content"]
-        }
+            evalQuestions:["Course as a whole", "Instructor's contribution", "Instructor's effectiveness", "Course content"]}
     },
 
     componentDidMount(){
@@ -44,7 +43,7 @@ var CommentContainer = React.createClass({
             author:this.props.displayName,
         	course:this.props.courseNumber,
             quarter:event.target.elements['quarter'].value,
-            professor:event.target.elements['professor'].value,
+            professor:event.target.elements['instructor'].value,
             review:event.target.elements['review'].value,
             anonymous:event.target.elements['anon'].value,
             difficulty:+(event.target.elements['difficulty'].value),
@@ -78,13 +77,20 @@ var CommentContainer = React.createClass({
 			  return this.state.reviews[d]
 		});
 
-        //filter course eval data and average medians
+        
         let evalKeys = Object.keys(this.state.courseEvals).filter((d) => {
             return this.state.courseEvals[d].course === this.props.courseNumber
         });
 
-        console.log(this.state.courseEvals)
-        console.log(evalKeys)
+        var instructors = []
+        var findInstructors = evalKeys.forEach((d) => {
+            if(!instructors.includes(this.state.courseEvals[d].instructor)){
+                instructors.push(this.state.courseEvals[d].instructor)
+            }
+        })
+        console.log(instructors)
+
+        //filter course eval data and average medians
         var courseEvalData = [];
 
         var q1sum = +0;
@@ -118,12 +124,6 @@ var CommentContainer = React.createClass({
                           {name:this.state.evalQuestions[2], uv:q3Average.toFixed(2), pv: 5, fill:this.getRandomColor()},
                           {name:this.state.evalQuestions[3], uv:q4Average.toFixed(2), pv: 5, fill:this.getRandomColor()}]
 
-		// var workloadData = [];
-		// workloadData = reviewKeys.map((d) => {
-		// 	  return parseInt(this.state.reviews[d].workload, 10);
-		// });
-		// console.log(workloadData)
-
 		var targetCourse = this.props.targetCourse;
 
         
@@ -138,7 +138,7 @@ var CommentContainer = React.createClass({
             </div>
 
             <CommentBox handleSubmit={this.createReview} quartersList={this.options}
-                aut={this.state.quarters[0]} win={this.state.quarters[1]}/>
+                aut={this.state.quarters[0]} win={this.state.quarters[1]} instructorsList={instructors}/>
 
 
             <div className="commentSec">

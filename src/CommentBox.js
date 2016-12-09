@@ -41,10 +41,17 @@ var CommentBox = React.createClass({
                             </select>
 
                             <p>Who was your instructor?</p>
-                            <input id="professor" placeholder="I took this class with.." type="text" className="validate" />
+                            <select id='instructor'>
+                            <option value='other'>Other</option>
+                                {
+                                    this.props.instructorsList.map(function(d, i){
+                                        return <option selected key={'instructor'+i} value={d}>{d}</option>
+                                    })
+                                }
 
+                            </select>
                             <p>Write a review</p>
-                        	<input id="review" placeholder="Write a review" type="text" className="validate" />
+                        	<input required id="review" placeholder="Write a review" type="text" className="validate" />
 
 
                             <p>Would you like to be anonymous?</p>
@@ -54,10 +61,10 @@ var CommentBox = React.createClass({
                             </select>
 
                             <p>Difficulty of this class?</p>
-                            <input id="difficulty" placeholder="1 (easy breezy) to 10 (challenging)" min="1" max="10" type="number" step="0.5" className="validate"/>
+                            <input required id="difficulty" placeholder="1 (easy breezy) to 10 (challenging)" min="1" max="10" type="number" step="0.5" className="validate"/>
 
                             <p>The amount of workload if this class?</p>
-                            <input id="workload" placeholder="1 (light) to 10 (unbearable)" min="1" max="10" type="number" step="0.5" className="validate" />
+                            <input required id="workload" placeholder="1 (light) to 10 (unbearable)" min="1" max="10" type="number" step="0.5" className="validate" />
                             <button type="submit" className="searchCourse">Submit</button>
                         </form>
                     </div>
