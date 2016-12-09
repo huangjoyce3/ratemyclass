@@ -16,7 +16,6 @@
 	top: 100px;
 	padding-bottom: 30px;
 	width: 90%;
-	
 }
 
 .title {
@@ -136,6 +135,5 @@ button[type="submit"]:hover {
 	.searchArea .no-result {
 		margin-left: 150px;
 		margin-right: 230px;
-	}
-	
+	}	
 }
