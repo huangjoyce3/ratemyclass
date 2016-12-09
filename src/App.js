@@ -11,7 +11,6 @@ var App = React.createClass({
 		return(
 			<div className="App">
 				<div className="navbar">
-					<Link className="Link" activeClassName='active' to="/About"><i className="fa fa-user-circle-o"></i>&nbsp;&nbsp;About Us</Link>
 				</div>
 				<div className="children">
 					{this.props.children}

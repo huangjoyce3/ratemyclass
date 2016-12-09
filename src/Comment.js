@@ -23,8 +23,9 @@ var Comment = React.createClass({
 				<h5 id="reviewHeader">{displayName}</h5>
 				<hr></hr>           
 				<p className="reviews">
+					<p className="date">{dateString}</p> 
 	                <span className="content"><b>{this.props.data.review}</b></span> 
-	                <p className="date">{dateString}</p> 
+	                
 	                <p className="course taken">User took this course in: {this.props.data.quarter}</p> 
 	                <p className="professor">Instructor: {this.props.data.professor}</p>
 	                <p className="difficulty">Difficulty: {this.props.data.difficulty}</p>

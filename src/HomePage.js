@@ -209,6 +209,9 @@ var HomePage = React.createClass({
 										    <button type="submit" className="searchCourse">Search</button>
 										</form>
 									</div>
+									{this.state.user && !this.state.hasResult && 
+									<div className="no-result">Class Not Found</div>
+								}
 									<h5>OR</h5>
 									<div className="seeCourse">
 									<button type="submit" className="searchCourse" onClick={this.showCourses}>See All Courses</button>
@@ -219,9 +222,7 @@ var HomePage = React.createClass({
 
 								</section>
 								
-								{this.state.user && !this.state.hasResult && 
-									<div className="no-result">Class Not Found</div>
-								}
+								
 							
 
 

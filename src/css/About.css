@@ -16,6 +16,7 @@
 	text-align: center;
 	margin-left: 30px;
 	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 .pictures {
@@ -33,4 +34,26 @@
 	margin: 30px;
 	margin-left: 50px;
 	margin-right: 50px;
+}
+
+.model {
+	float: left;
+	margin-top: -45px;
+	margin-left: 49px;
+	position: fixed;
+	z-index: 2000;
+	color: white;
+	cursor: pointer;
+	padding: 10px 12px;
+	background-color: #4B2D87;
+}
+
+.model:hover {
+    color: #4B2D87;
+    background-color: white;
+}
+
+.model.active {
+    color: #4B2D87;
+    background-color: white;
 }

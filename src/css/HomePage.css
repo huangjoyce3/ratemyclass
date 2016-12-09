@@ -4,6 +4,7 @@
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 	min-height: 93vh;
 	margin-top: -45px;
 	margin-bottom: -15px;
@@ -40,7 +41,7 @@
 
 .searchBar {
 	margin-left: 90px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .searchCourse {
@@ -118,6 +119,7 @@ button[type="submit"]:hover {
 		font-weight: bold;
 		display: table;
 		margin: 0 auto;
+		margin-top: 30px;
 	}
 
 	.seeCourse {

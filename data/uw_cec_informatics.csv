@@ -1,0 +1,491 @@
+course,instructor,quarter,Question,Excellent,Very Good,Good,Fair,Poor,Very Poor,Median
+INFO 101,Bob Boiko,AU15,Course as a whole,22%,27%,30%,14%,5%,2%,3.47
+INFO 101,Bob Boiko,AU15,Instructor's contribution,23%,23%,24%,19%,8%,3%,3.3
+INFO 101,Bob Boiko,AU15,Instructor's effectiveness,21%,23%,32%,11%,6%,6%,3.3
+INFO 101,Bob Boiko,AU15,Course content,21%,23%,34%,16%,5%,2%,3.31
+INFO 101,Bob Boiko,SP16,Course as a whole,59%,22%,14%,5%,0%,0%,4.66
+INFO 101,Bob Boiko,SP16,Instructor's contribution,51%,30%,8%,8%,3%,0%,4.53
+INFO 101,Bob Boiko,SP16,Instructor's effectiveness,58%,19%,14%,8%,0%,0%,4.64
+INFO 101,Bob Boiko,SP16,Course content,57%,27%,8%,8%,0%,0%,4.62
+INFO 101,Bob Boiko,WI16,Course content,41%,27%,30%,3%,0%,0%,4.15
+INFO 101,Bob Boiko,WI16,Instructor's contribution,46%,22%,24%,8%,0%,0%,4.31
+INFO 101,Bob Boiko,WI16,Course as a whole,46%,24%,27%,3%,0%,0%,4.33
+INFO 101,Bob Boiko,WI16,Instructor's effectiveness,51%,19%,22%,8%,0%,0%,4.53
+INFO 102,Laura Schildkraut,SP16,Grading techniques,21%,10%,24%,21%,7%,17%,2.71
+INFO 102,Laura Schildkraut,SP16,Amount learned,22%,19%,22%,14%,16%,7%,3.12
+INFO 102,Laura Schildkraut,SP16,Course content,20%,27%,24%,15%,8%,5%,3.39
+INFO 102,Laura Schildkraut,SP16,Instructor's effectiveness,29%,22%,29%,8%,7%,5%,3.54
+INFO 102,Laura Schildkraut,SP16,Course as a whole,22%,25%,25%,15%,8%,3%,3.4
+INFO 102,Laura Schildkraut,SP16,Instructor's contribution,34%,29%,20%,7%,5%,5%,3.94
+INFO 102,Laura Schildkraut,SP16,Instuctor's interest,36%,26%,24%,9%,5%,0%,3.97
+INFO 102,Negin Dahya,AU15,Instructor overall,15%,17%,29%,25%,12%,2%,2.86
+INFO 102,Negin Dahya,AU15,Relevance and usefulness of homework,11%,11%,26%,33%,17%,2%,2.43
+INFO 102,Negin Dahya,AU15,Instuctor's interest,13%,20%,24%,33%,7%,4%,2.77
+INFO 102,Negin Dahya,AU15,Instructor's contribution,10%,12%,27%,27%,17%,6%,2.5
+INFO 102,Negin Dahya,AU15,Course as a whole,8%,12%,27%,31%,21%,0%,2.43
+INFO 102,Negin Dahya,AU15,Textbook overall,10%,15%,31%,27%,17%,0%,2.7
+INFO 102,Negin Dahya,AU15,Amount learned,7%,22%,17%,33%,20%,2%,2.37
+INFO 200,Beth Patin,SP16,Course as a whole,53%,27%,20%,0%,0%,0%,4.56
+INFO 200,Beth Patin,SP16,Course content,47%,33%,13%,7%,0%,0%,4.4
+INFO 200,Beth Patin,SP16,Instructor's effectiveness,73%,13%,7%,7%,0%,0%,4.82
+INFO 200,Beth Patin,SP16,Instructor's contribution,73%,13%,13%,0%,0%,0%,4.82
+INFO 200,David Stearns,AU15,Instructor's contribution,95%,3%,2%,0%,0%,0%,4.97
+INFO 200,David Stearns,AU15,Course as a whole,84%,13%,3%,0%,0%,0%,4.91
+INFO 200,David Stearns,AU15,Instructor's effectiveness,94%,4%,2%,0%,0%,0%,4.97
+INFO 200,David Stearns,AU15,Course content,81%,15%,4%,0%,0%,0%,4.88
+INFO 200,Michael Freeman,SP16,Course as a whole,39%,30%,23%,2%,2%,4%,4.14
+INFO 200,Michael Freeman,SP16,Instructor's effectiveness,42%,31%,18%,5%,1%,4%,4.23
+INFO 200,Michael Freeman,SP16,Instructor's contribution,46%,31%,14%,5%,1%,2%,4.38
+INFO 200,Michael Freeman,SP16,Course content,33%,32%,21%,6%,4%,4%,3.98
+INFO 200,Michael Freeman,WI16,Instructor's effectiveness,40%,34%,18%,5%,1%,1%,4.2
+INFO 200,Michael Freeman,WI16,Course content,26%,27%,30%,12%,3%,1%,3.63
+INFO 200,Michael Freeman,WI16,Course as a whole,29%,33%,26%,8%,3%,1%,3.85
+INFO 200,Michael Freeman,WI16,Instructor's contribution,42%,32%,22%,1%,1%,1%,4.26
+INFO 200,Wendy Chapin,SU16,Course content,36%,27%,36%,0%,0%,0%,4
+INFO 200,Wendy Chapin,SU16,Instructor's effectiveness,27%,36%,36%,0%,0%,0%,3.88
+INFO 200,Wendy Chapin,SU16,Course as a whole,45%,18%,36%,0%,0%,0%,4.25
+INFO 200,Wendy Chapin,SU16,Instructor's contribution,36%,36%,18%,9%,0%,0%,4.13
+INFO 310,James Farricker,WI16,Instructor's effectiveness,31%,46%,8%,15%,0%,0%,4.08
+INFO 310,James Farricker,WI16,Instructor's contribution,38%,38%,8%,15%,0%,0%,4.2
+INFO 310,James Farricker,WI16,Course as a whole,38%,38%,8%,15%,0%,0%,4.2
+INFO 310,James Farricker,WI16,Course content,38%,38%,8%,15%,0%,0%,4.2
+INFO 312,Annie Searle,AU15,Amount learned,45%,36%,9%,9%,0%,0%,4.38
+INFO 312,Annie Searle,AU15,Instuctor's interest,45%,45%,0%,9%,0%,0%,4.4
+INFO 312,Annie Searle,AU15,Grading techniques,45%,45%,9%,0%,0%,0%,4.4
+INFO 312,Annie Searle,AU15,Course content,50%,17%,17%,17%,0%,0%,4.5
+INFO 312,Annie Searle,AU15,Course as a whole,50%,25%,17%,8%,0%,0%,4.5
+INFO 312,Annie Searle,AU15,Instructor's effectiveness,50%,33%,17%,0%,0%,0%,4.5
+INFO 312,Annie Searle,AU15,Instructor's contribution,50%,50%,0%,0%,0%,0%,4.5
+INFO 330,James Sweeney,WI16,Instructor's effectiveness,7%,7%,60%,13%,13%,0%,2.89
+INFO 330,James Sweeney,WI16,Instructor's contribution,7%,13%,40%,27%,13%,0%,2.75
+INFO 330,James Sweeney,WI16,Course as a whole,7%,13%,47%,13%,13%,7%,2.86
+INFO 330,James Sweeney,WI16,Course content,7%,7%,47%,20%,7%,13%,2.71
+INFO 330,Jason Levine,SU16,Course as a whole,28%,28%,35%,10%,0%,0%,3.68
+INFO 330,Jason Levine,SU16,Course content,25%,40%,25%,8%,2%,0%,3.88
+INFO 330,Jason Levine,SU16,Instructor's effectiveness,38%,25%,30%,5%,2%,0%,4
+INFO 330,Jason Levine,SU16,Instructor's contribution,42%,30%,18%,10%,0%,0%,4.25
+INFO 330,James Rodgers,SU16,Relevance and usefulness of homework,42%,26%,32%,0%,0%,0%,4.2
+INFO 330,James Rodgers,SU16,Instuctor's interest,95%,5%,0%,0%,0%,0%,4.97
+INFO 330,James Rodgers,SU16,Textbook overall,25%,50%,20%,5%,0%,0%,4
+INFO 330,James Rodgers,SU16,Instructor's contribution,60%,35%,5%,0%,0%,0%,4.67
+INFO 330,James Rodgers,SU16,Instructor overall,70%,25%,5%,0%,0%,0%,4.79
+INFO 330,James Rodgers,SU16,Amount learned,37%,37%,26%,0%,0%,0%,4.14
+INFO 330,James Rodgers,SU16,Course as a whole,30%,50%,15%,5%,0%,0%,4.1
+INFO 330,Justin Blaney,WI16,Course as a whole,44%,39%,17%,0%,0%,0%,4.36
+INFO 330,Justin Blaney,WI16,Instructor's effectiveness,44%,39%,11%,6%,0%,0%,4.36
+INFO 330,Justin Blaney,WI16,Instructor's contribution,56%,22%,22%,0%,0%,0%,4.6
+INFO 330,Justin Blaney,WI16,Course content,33%,44%,11%,11%,0%,0%,4.13
+INFO 330,James Sweeney,SP16,Instructor overall,5%,9%,18%,27%,32%,9%,1.83
+INFO 330,James Sweeney,SP16,Amount learned,5%,0%,10%,24%,29%,33%,1.08
+INFO 330,James Sweeney,SP16,Relevance and usefulness of homework,5%,14%,24%,24%,19%,14%,2.2
+INFO 330,James Sweeney,SP16,Textbook overall,5%,5%,27%,36%,18%,9%,2.13
+INFO 330,James Sweeney,SP16,Instructor's contribution,9%,14%,18%,27%,18%,14%,2.17
+INFO 330,James Sweeney,SP16,Instuctor's interest,10%,5%,19%,24%,24%,19%,1.8
+INFO 330,James Sweeney,SP16,Course as a whole,5%,9%,18%,32%,27%,9%,1.93
+INFO 330,Jason Levine,WI16,Course content,33%,48%,15%,4%,0%,0%,4.15
+INFO 330,Jason Levine,WI16,Instructor's contribution,48%,37%,11%,4%,0%,0%,4.45
+INFO 330,Jason Levine,WI16,Course as a whole,33%,52%,11%,4%,0%,0%,4.18
+INFO 330,Jason Levine,WI16,Instructor's effectiveness,52%,37%,7%,4%,0%,0%,4.54
+INFO 340,Greg Hay,AU15,Course as a whole,29%,29%,24%,10%,10%,0%,3.75
+INFO 340,Greg Hay,AU15,Instructor's contribution,33%,19%,29%,10%,5%,5%,3.63
+INFO 340,Greg Hay,AU15,Instructor's effectiveness,29%,14%,24%,24%,0%,10%,3.2
+INFO 340,Greg Hay,AU15,Course content,29%,33%,29%,10%,0%,0%,3.86
+INFO 340,Greg Hay,SP16,Course as a whole,44%,22%,22%,11%,0%,0%,4.25
+INFO 340,Greg Hay,SP16,Course content,44%,33%,17%,6%,0%,0%,4.33
+INFO 340,Greg Hay,SP16,Instructor's contribution,50%,22%,11%,17%,0%,0%,4.5
+INFO 340,Greg Hay,SP16,Instructor's effectiveness,33%,33%,11%,17%,6%,0%,4
+INFO 340,Greg Hay,SU16,Course as a whole,40%,10%,40%,0%,10%,0%,3.5
+INFO 340,Greg Hay,SU16,Instructor's contribution,50%,10%,20%,20%,0%,0%,4.5
+INFO 340,Greg Hay,SU16,Course content,50%,10%,30%,0%,10%,0%,4.5
+INFO 340,Greg Hay,SU16,Instructor's effectiveness,40%,10%,10%,30%,10%,0%,3.5
+INFO 340,Clinton Campbell,SP16,Instructor's contribution,47%,26%,5%,16%,5%,0%,4.4
+INFO 340,Clinton Campbell,SP16,Course as a whole,47%,26%,16%,5%,5%,0%,4.4
+INFO 340,Clinton Campbell,SP16,Instructor's effectiveness,42%,26%,5%,21%,5%,0%,4.2
+INFO 340,Clinton Campbell,SP16,Course content,37%,42%,11%,11%,0%,0%,4.19
+INFO 340,Clinton Campbell,SP16,Grading techniques,53%,26%,11%,0%,11%,0%,4.55
+INFO 340,Clinton Campbell,SP16,Instuctor's interest,53%,32%,5%,5%,5%,0%,4.55
+INFO 340,Clinton Campbell,SP16,Amount learned,42%,32%,11%,5%,11%,0%,4.25
+INFO 340,Greg Hay,AU15,Course as a whole,11%,32%,26%,16%,16%,0%,3.2
+INFO 340,Greg Hay,AU15,Instructor's contribution,16%,26%,26%,11%,21%,0%,3.2
+INFO 340,Greg Hay,AU15,Course content,26%,32%,26%,5%,11%,0%,3.75
+INFO 340,Greg Hay,AU15,Instructor's effectiveness,21%,16%,26%,11%,21%,5%,3
+INFO 340,Greg Hay,SP16,Course content,23%,46%,31%,0%,0%,0%,3.92
+INFO 340,Greg Hay,SP16,Instructor's effectiveness,23%,46%,23%,8%,0%,0%,3.92
+INFO 340,Greg Hay,SP16,Instructor's contribution,31%,54%,15%,0%,0%,0%,4.14
+INFO 340,Greg Hay,SP16,Course as a whole,38%,31%,31%,0%,0%,0%,4.13
+INFO 340,Kevin Fleming,AU15,Course as a whole,17%,8%,54%,8%,8%,4%,3.04
+INFO 340,Kevin Fleming,AU15,Instructor's effectiveness,22%,4%,39%,26%,4%,4%,2.89
+INFO 340,Kevin Fleming,AU15,Course content,12%,17%,58%,12%,0%,0%,3.14
+INFO 340,Kevin Fleming,AU15,Instructor's contribution,17%,8%,46%,12%,8%,8%,2.95
+INFO 341,James Farricker,AU15,Grading techniques,71%,7%,14%,7%,0%,0%,4.8
+INFO 341,James Farricker,AU15,Instructor's effectiveness,79%,7%,7%,0%,7%,0%,4.86
+INFO 341,James Farricker,AU15,Course content,79%,7%,7%,7%,0%,0%,4.86
+INFO 341,James Farricker,AU15,Instuctor's interest,79%,14%,0%,0%,7%,0%,4.86
+INFO 341,James Farricker,AU15,Amount learned,86%,0%,7%,0%,7%,0%,4.92
+INFO 341,James Farricker,AU15,Instructor's contribution,79%,7%,14%,0%,0%,0%,4.86
+INFO 341,James Farricker,AU15,Course as a whole,79%,7%,7%,0%,7%,0%,4.86
+INFO 341,James Farricker,SP16,Instructor's effectiveness,88%,12%,0%,0%,0%,0%,4.93
+INFO 341,James Farricker,SP16,Amount learned,82%,12%,6%,0%,0%,0%,4.89
+INFO 341,James Farricker,SP16,Course content,82%,18%,0%,0%,0%,0%,4.89
+INFO 341,James Farricker,SP16,Instructor's contribution,94%,6%,0%,0%,0%,0%,4.97
+INFO 341,James Farricker,SP16,Course as a whole,82%,12%,6%,0%,0%,0%,4.89
+INFO 341,James Farricker,SP16,Instuctor's interest,82%,18%,0%,0%,0%,0%,4.89
+INFO 341,James Farricker,SP16,Grading techniques,88%,6%,6%,0%,0%,0%,4.93
+INFO 343,An Yan,SU16,Course as a whole,20%,60%,0%,20%,0%,0%,4
+INFO 343,An Yan,SU16,Instructor's effectiveness,20%,60%,10%,10%,0%,0%,4
+INFO 343,An Yan,SU16,Instructor's contribution,20%,60%,0%,20%,0%,0%,4
+INFO 343,An Yan,SU16,Course content,20%,60%,10%,10%,0%,0%,4
+INFO 343,Joel Ross,SP16,Grading techniques,47%,32%,16%,0%,5%,0%,4.42
+INFO 343,Joel Ross,SU16,Course content,58%,37%,5%,0%,0%,0%,4.64
+INFO 343,Joel Ross,SU16,Instructor's contribution,68%,26%,5%,0%,0%,0%,4.77
+INFO 343,Joel Ross,SU16,Instuctor's interest,47%,37%,11%,0%,5%,0%,4.43
+INFO 343,Joel Ross,SU16,Course as a whole,47%,42%,5%,5%,0%,0%,4.44
+INFO 343,Joel Ross,SU16,Amount learned,63%,26%,5%,5%,0%,0%,4.71
+INFO 343,Joel Ross,SU16,Instructor's effectiveness,58%,37%,5%,0%,0%,0%,4.64
+INFO 343,Michael Freeman,AU15,Course content,81%,12%,8%,0%,0%,0%,4.88
+INFO 343,Michael Freeman,AU15,Instructor's contribution,96%,4%,0%,0%,0%,0%,4.98
+INFO 343,Michael Freeman,AU15,Instuctor's interest,85%,12%,4%,0%,0%,0%,4.91
+INFO 343,Michael Freeman,AU15,Grading techniques,69%,15%,15%,0%,0%,0%,4.78
+INFO 343,Michael Freeman,AU15,Amount learned,88%,12%,0%,0%,0%,0%,4.93
+INFO 343,Michael Freeman,AU15,Instructor's effectiveness,81%,8%,8%,4%,0%,0%,4.88
+INFO 343,Michael Freeman,AU15,Course as a whole,81%,15%,4%,0%,0%,0%,4.88
+INFO 343,Joel Ross,AU15,Instuctor's interest,65%,30%,5%,0%,0%,0%,4.73
+INFO 343,Joel Ross,AU15,Amount learned,70%,25%,5%,0%,0%,0%,4.79
+INFO 343,Joel Ross,AU15,Course content,65%,30%,5%,0%,0%,0%,4.73
+INFO 343,Joel Ross,AU15,Instructor's contribution,65%,30%,5%,0%,0%,0%,4.73
+INFO 343,Joel Ross,AU15,Course as a whole,60%,20%,20%,0%,0%,0%,4.67
+INFO 343,Joel Ross,AU15,Grading techniques,65%,30%,0%,0%,5%,0%,4.73
+INFO 343,Joel Ross,AU15,Instructor's effectiveness,50%,40%,5%,5%,0%,0%,4.5
+INFO 343,Michael Freeman,AU15,Amount learned,58%,32%,5%,5%,0%,0%,4.64
+INFO 343,Michael Freeman,AU15,Course as a whole,53%,42%,0%,5%,0%,0%,4.55
+INFO 343,Michael Freeman,AU15,Instuctor's interest,63%,21%,16%,0%,0%,0%,4.71
+INFO 343,Michael Freeman,AU15,Instructor's effectiveness,37%,47%,11%,5%,0%,0%,4.22
+INFO 343,Michael Freeman,AU15,Instructor's contribution,72%,17%,11%,0%,0%,0%,4.81
+INFO 343,Michael Freeman,AU15,Grading techniques,63%,26%,11%,0%,0%,0%,4.71
+INFO 343,Michael Freeman,AU15,Course content,58%,32%,5%,5%,0%,0%,4.64
+INFO 343,Joel Ross,AU15,Amount learned,50%,20%,20%,10%,0%,0%,4.5
+INFO 343,Joel Ross,AU15,Grading techniques,45%,20%,30%,5%,0%,0%,4.25
+INFO 343,Joel Ross,AU15,Instructor's contribution,40%,40%,10%,10%,0%,0%,4.25
+INFO 343,Joel Ross,AU15,Instuctor's interest,60%,25%,5%,5%,5%,0%,4.67
+INFO 343,Joel Ross,AU15,Instructor's effectiveness,25%,30%,30%,15%,0%,0%,3.67
+INFO 343,Joel Ross,AU15,Course content,45%,40%,15%,0%,0%,0%,4.38
+INFO 343,Joel Ross,AU15,Course as a whole,30%,30%,35%,5%,0%,0%,3.83
+INFO 343,David Stearns,AU15,Instuctor's interest,88%,8%,4%,0%,0%,0%,4.93
+INFO 343,David Stearns,AU15,Course as a whole,79%,21%,0%,0%,0%,0%,4.87
+INFO 343,David Stearns,AU15,Instructor's contribution,88%,12%,0%,0%,0%,0%,4.93
+INFO 343,David Stearns,AU15,Grading techniques,88%,8%,4%,0%,0%,0%,4.93
+INFO 343,David Stearns,AU15,Amount learned,83%,12%,4%,0%,0%,0%,4.9
+INFO 343,David Stearns,AU15,Instructor's effectiveness,87%,13%,0%,0%,0%,0%,4.93
+INFO 343,David Stearns,AU15,Course content,88%,12%,0%,0%,0%,0%,4.93
+INFO 344,An Yan,SU16,Instructor's effectiveness,25%,75%,0%,0%,0%,0%,4.17
+INFO 344,An Yan,SU16,Course content,25%,75%,0%,0%,0%,0%,4.17
+INFO 344,An Yan,SU16,Instructor's contribution,50%,50%,0%,0%,0%,0%,4.5
+INFO 344,An Yan,SU16,Course as a whole,25%,50%,25%,0%,0%,0%,4
+INFO 344,Chun-Kai Wang,SP16,Course as a whole,60%,20%,8%,8%,0%,4%,4.67
+INFO 344,Chun-Kai Wang,SP16,Course content,72%,16%,8%,4%,0%,0%,4.81
+INFO 344,Chun-Kai Wang,SP16,Instructor's effectiveness,56%,20%,4%,12%,4%,4%,4.61
+INFO 344,Chun-Kai Wang,SP16,Instructor's contribution,64%,12%,8%,12%,4%,0%,4.72
+INFO 344,David Stearns,WI16,Instructor's contribution,83%,6%,6%,6%,0%,0%,4.9
+INFO 344,David Stearns,WI16,Course content,83%,17%,0%,0%,0%,0%,4.9
+INFO 344,David Stearns,WI16,Grading techniques,72%,11%,6%,6%,0%,6%,4.81
+INFO 344,David Stearns,WI16,Instuctor's interest,83%,6%,6%,6%,0%,0%,4.9
+INFO 344,David Stearns,WI16,Course as a whole,56%,28%,11%,6%,0%,0%,4.6
+INFO 344,David Stearns,WI16,Amount learned,72%,22%,6%,0%,0%,0%,4.81
+INFO 344,David Stearns,WI16,Instructor's effectiveness,78%,11%,0%,11%,0%,0%,4.86
+INFO 344,Shawn Walker,SU16,Course content,50%,25%,0%,0%,25%,0%,4.5
+INFO 344,Shawn Walker,SU16,Instructor's contribution,50%,25%,25%,0%,0%,0%,4.5
+INFO 344,Shawn Walker,SU16,Instructor's effectiveness,75%,0%,0%,25%,0%,0%,4.83
+INFO 344,Shawn Walker,SU16,Course as a whole,50%,25%,25%,0%,0%,0%,4.5
+INFO 360,David Randall,AU15,Instructor's effectiveness,11%,22%,22%,22%,11%,11%,2.75
+INFO 360,David Randall,AU15,Instructor's contribution,11%,11%,33%,17%,17%,11%,2.67
+INFO 360,David Randall,AU15,Course as a whole,17%,22%,17%,33%,0%,11%,2.83
+INFO 360,David Randall,AU15,Course content,24%,18%,24%,24%,0%,12%,3.13
+INFO 360,Jaime Snyder,AU15,Course content,18%,23%,41%,5%,14%,0%,3.28
+INFO 360,Jaime Snyder,AU15,Instructor's contribution,36%,23%,23%,14%,5%,0%,3.9
+INFO 360,Jaime Snyder,AU15,Course as a whole,14%,36%,27%,9%,14%,0%,3.5
+INFO 360,Jaime Snyder,AU15,Instructor's effectiveness,32%,27%,18%,18%,0%,5%,3.83
+INFO 360,Jason Yip,WI16,Course as a whole,40%,27%,20%,7%,7%,0%,4.13
+INFO 360,Jason Yip,WI16,Course content,40%,27%,20%,7%,7%,0%,4.13
+INFO 360,Jason Yip,WI16,Instructor's effectiveness,53%,27%,7%,13%,0%,0%,4.56
+INFO 360,Jason Yip,WI16,Instructor's contribution,53%,27%,13%,0%,7%,0%,4.56
+INFO 360,Daisy Yoo,WI16,Course content,29%,57%,14%,0%,0%,0%,4.13
+INFO 360,Daisy Yoo,WI16,Course as a whole,29%,57%,14%,0%,0%,0%,4.13
+INFO 360,Daisy Yoo,WI16,Instructor's effectiveness,29%,43%,29%,0%,0%,0%,4
+INFO 360,Daisy Yoo,WI16,Instructor's contribution,29%,57%,14%,0%,0%,0%,4.13
+INFO 360,Jaime Snyder,AU15,Course content,6%,44%,6%,28%,17%,0%,3.5
+INFO 360,Jaime Snyder,AU15,Instructor's contribution,6%,28%,28%,22%,17%,0%,2.9
+INFO 360,Jaime Snyder,AU15,Instructor's effectiveness,11%,28%,11%,22%,22%,6%,2.5
+INFO 360,Jaime Snyder,AU15,Course as a whole,6%,33%,22%,28%,11%,0%,3
+INFO 360,Jason Yip,WI16,Instructor's contribution,67%,27%,7%,0%,0%,0%,4.75
+INFO 360,Jason Yip,WI16,Course content,40%,53%,7%,0%,0%,0%,4.31
+INFO 360,Jason Yip,WI16,Instructor's effectiveness,67%,27%,7%,0%,0%,0%,4.75
+INFO 360,Jason Yip,WI16,Course as a whole,47%,47%,7%,0%,0%,0%,4.43
+INFO 360,Travis Windleharth,AU15,Instructor's contribution,10%,50%,10%,20%,10%,0%,3.7
+INFO 360,Travis Windleharth,AU15,Course content,10%,50%,20%,20%,0%,0%,3.7
+INFO 360,Travis Windleharth,AU15,Course as a whole,20%,40%,10%,20%,10%,0%,3.75
+INFO 360,Travis Windleharth,AU15,Instructor's effectiveness,10%,50%,10%,20%,10%,0%,3.7
+INFO 360,Andrew Ko,AU15,Course as a whole,50%,28%,17%,6%,0%,0%,4.5
+INFO 360,Andrew Ko,AU15,Instructor's contribution,50%,44%,6%,0%,0%,0%,4.5
+INFO 360,Andrew Ko,AU15,Course content,44%,33%,22%,0%,0%,0%,4.33
+INFO 360,Andrew Ko,AU15,Instructor's effectiveness,39%,56%,6%,0%,0%,0%,4.3
+INFO 360,Paul Weiss,WI16,Course content,50%,30%,10%,10%,0%,0%,4.5
+INFO 360,Paul Weiss,WI16,Instructor's contribution,70%,10%,10%,10%,0%,0%,4.79
+INFO 360,Paul Weiss,WI16,Instructor's effectiveness,70%,10%,10%,10%,0%,0%,4.79
+INFO 360,Paul Weiss,WI16,Course as a whole,50%,30%,20%,0%,0%,0%,4.5
+INFO 370,Jevin West,AU15,Instructor's contribution,74%,26%,0%,0%,0%,0%,4.83
+INFO 370,Jevin West,AU15,Course content,56%,44%,0%,0%,0%,0%,4.6
+INFO 370,Jevin West,AU15,Course as a whole,70%,26%,4%,0%,0%,0%,4.79
+INFO 370,Jevin West,AU15,Instructor's effectiveness,63%,30%,7%,0%,0%,0%,4.71
+INFO 370,Lovenoor Aulck,AU15,Course content,58%,42%,0%,0%,0%,0%,4.64
+INFO 370,Lovenoor Aulck,AU15,Instructor's effectiveness,67%,33%,0%,0%,0%,0%,4.75
+INFO 370,Lovenoor Aulck,AU15,Instructor's contribution,75%,25%,0%,0%,0%,0%,4.83
+INFO 370,Lovenoor Aulck,AU15,Course as a whole,75%,25%,0%,0%,0%,0%,4.83
+INFO 371,Joshua Blumenstock,SP16,Instuctor's interest,70%,30%,0%,0%,0%,0%,4.79
+INFO 371,Joshua Blumenstock,SP16,Course as a whole,60%,20%,20%,0%,0%,0%,4.67
+INFO 371,Joshua Blumenstock,SP16,Grading techniques,60%,40%,0%,0%,0%,0%,4.67
+INFO 371,Joshua Blumenstock,SP16,Course content,70%,10%,20%,0%,0%,0%,4.79
+INFO 371,Joshua Blumenstock,SP16,Instructor's contribution,80%,20%,0%,0%,0%,0%,4.88
+INFO 371,Joshua Blumenstock,SP16,Amount learned,60%,30%,10%,0%,0%,0%,4.67
+INFO 371,Joshua Blumenstock,SP16,Instructor's effectiveness,80%,20%,0%,0%,0%,0%,4.88
+INFO 371,Niall Keleher,SP16,Course content,83%,17%,0%,0%,0%,0%,4.9
+INFO 371,Niall Keleher,SP16,Instructor's contribution,67%,17%,17%,0%,0%,0%,4.75
+INFO 371,Niall Keleher,SP16,Course as a whole,83%,17%,0%,0%,0%,0%,4.9
+INFO 371,Niall Keleher,SP16,Instructor's effectiveness,50%,33%,17%,0%,0%,0%,4.5
+INFO 380,Mike Doane,SP16,Instructor's contribution,33%,39%,15%,11%,2%,0%,4.06
+INFO 380,Mike Doane,SP16,Course content,28%,20%,26%,20%,4%,2%,3.42
+INFO 380,Mike Doane,SP16,Instructor's effectiveness,33%,33%,22%,7%,7%,0%,3.97
+INFO 380,Mike Doane,SP16,Course as a whole,24%,24%,33%,9%,9%,2%,3.43
+INFO 386,Laura Schildkraut,SP16,Amount learned,59%,24%,12%,6%,0%,0%,4.65
+INFO 386,Laura Schildkraut,SP16,Course as a whole,65%,24%,6%,6%,0%,0%,4.73
+INFO 386,Laura Schildkraut,SP16,Instuctor's interest,71%,24%,6%,0%,0%,0%,4.79
+INFO 386,Laura Schildkraut,SP16,Grading techniques,53%,18%,12%,6%,12%,0%,4.56
+INFO 386,Laura Schildkraut,SP16,Instructor's contribution,76%,12%,12%,0%,0%,0%,4.85
+INFO 386,Laura Schildkraut,SP16,Course content,65%,18%,12%,6%,0%,0%,4.73
+INFO 386,Laura Schildkraut,SP16,Instructor's effectiveness,76%,12%,12%,0%,0%,0%,4.85
+INFO 386,Laura Schildkraut,WI16,Instructor's effectiveness,53%,27%,20%,0%,0%,0%,4.56
+INFO 386,Laura Schildkraut,WI16,Grading techniques,47%,20%,27%,0%,7%,0%,4.33
+INFO 386,Laura Schildkraut,WI16,Course as a whole,53%,27%,20%,0%,0%,0%,4.56
+INFO 386,Laura Schildkraut,WI16,Course content,47%,33%,20%,0%,0%,0%,4.4
+INFO 386,Laura Schildkraut,WI16,Instuctor's interest,67%,27%,7%,0%,0%,0%,4.75
+INFO 386,Laura Schildkraut,WI16,Amount learned,53%,27%,20%,0%,0%,0%,4.56
+INFO 386,Laura Schildkraut,WI16,Instructor's contribution,73%,20%,7%,0%,0%,0%,4.82
+INFO 415,Andrew McKenna,SP16,Course content,62%,31%,8%,0%,0%,0%,4.69
+INFO 415,Andrew McKenna,SP16,Course as a whole,62%,23%,15%,0%,0%,0%,4.69
+INFO 415,Andrew McKenna,SP16,Instructor's effectiveness,46%,46%,8%,0%,0%,0%,4.42
+INFO 415,Andrew McKenna,SP16,Instructor's contribution,46%,38%,8%,0%,8%,0%,4.4
+INFO 444,David Hendry,AU15,Grading techniques,0%,67%,33%,0%,0%,0%,3.75
+INFO 444,David Hendry,AU15,Instuctor's interest,67%,33%,0%,0%,0%,0%,4.75
+INFO 444,David Hendry,AU15,Course as a whole,17%,67%,17%,0%,0%,0%,4
+INFO 444,David Hendry,AU15,Instructor's contribution,33%,67%,0%,0%,0%,0%,4.25
+INFO 444,David Hendry,AU15,Amount learned,17%,33%,50%,0%,0%,0%,3.5
+INFO 444,David Hendry,AU15,Instructor's effectiveness,33%,67%,0%,0%,0%,0%,4.25
+INFO 444,David Hendry,AU15,Course content,17%,67%,17%,0%,0%,0%,4
+INFO 444,Rose Kinsley,AU15,Course as a whole,0%,100%,0%,0%,0%,0%,4
+INFO 444,Rose Kinsley,AU15,Course content,0%,75%,25%,0%,0%,0%,3.83
+INFO 444,Rose Kinsley,AU15,Instructor's effectiveness,0%,50%,50%,0%,0%,0%,3.5
+INFO 444,Rose Kinsley,AU15,Instructor's contribution,0%,75%,25%,0%,0%,0%,3.83
+INFO 445,Greg Hay,SP16,Course content,33%,50%,0%,11%,6%,0%,4.17
+INFO 445,Greg Hay,SP16,Course as a whole,28%,50%,6%,11%,6%,0%,4.06
+INFO 445,Greg Hay,SP16,Instructor's effectiveness,28%,44%,17%,6%,6%,0%,4
+INFO 445,Greg Hay,SP16,Instructor's contribution,39%,39%,11%,11%,0%,0%,4.21
+INFO 445,Greg Hay,WI16,Course as a whole,50%,21%,21%,0%,7%,0%,4.5
+INFO 445,Greg Hay,WI16,Instructor's contribution,57%,21%,14%,7%,0%,0%,4.63
+INFO 445,Greg Hay,WI16,Instructor's effectiveness,46%,23%,31%,0%,0%,0%,4.33
+INFO 445,Greg Hay,WI16,Course content,43%,21%,14%,14%,7%,0%,4.17
+INFO 450,Adam Moore,WI16,Grading techniques,38%,31%,24%,4%,3%,0%,4.12
+INFO 450,Adam Moore,WI16,Instructor's contribution,64%,30%,6%,0%,0%,0%,4.72
+INFO 450,Adam Moore,WI16,Instuctor's interest,49%,38%,9%,3%,1%,0%,4.46
+INFO 450,Adam Moore,WI16,Course as a whole,41%,37%,20%,1%,0%,0%,4.27
+INFO 450,Adam Moore,WI16,Course content,39%,44%,16%,1%,0%,0%,4.24
+INFO 450,Adam Moore,WI16,Amount learned,41%,29%,19%,6%,4%,0%,4.2
+INFO 450,Adam Moore,WI16,Instructor's effectiveness,62%,30%,7%,0%,0%,0%,4.7
+INFO 450,Kenneth Himma,SP16,Course as a whole,27%,27%,22%,20%,2%,2%,3.64
+INFO 450,Kenneth Himma,SP16,Instructor's contribution,41%,34%,10%,10%,2%,2%,4.25
+INFO 450,Kenneth Himma,SP16,Grading techniques,28%,28%,28%,10%,8%,0%,3.68
+INFO 450,Kenneth Himma,SP16,Course content,20%,27%,39%,12%,0%,2%,3.41
+INFO 450,Kenneth Himma,SP16,Amount learned,22%,22%,30%,10%,10%,5%,3.33
+INFO 450,Kenneth Himma,SP16,Instructor's effectiveness,39%,29%,17%,5%,7%,2%,4.13
+INFO 450,Kenneth Himma,SP16,Instuctor's interest,62%,20%,10%,5%,0%,2%,4.7
+INFO 450,Christopher Heaney,SP16,Course content,20%,60%,10%,10%,0%,0%,4
+INFO 450,Christopher Heaney,SP16,Course as a whole,20%,60%,10%,10%,0%,0%,4
+INFO 450,Christopher Heaney,SP16,Instructor's effectiveness,10%,50%,20%,20%,0%,0%,3.7
+INFO 450,Christopher Heaney,SP16,Instructor's contribution,40%,40%,10%,10%,0%,0%,4.25
+INFO 450,Christopher Heaney,SP16,Course as a whole,20%,20%,40%,10%,0%,10%,3.25
+INFO 450,Christopher Heaney,SP16,Course content,30%,10%,40%,10%,10%,0%,3.25
+INFO 450,Christopher Heaney,SP16,Instructor's contribution,22%,33%,22%,0%,11%,11%,3.67
+INFO 450,Christopher Heaney,SP16,Instructor's effectiveness,20%,40%,10%,20%,0%,10%,3.75
+INFO 450,W. Chapin,WI16,Instructor's effectiveness,12%,38%,12%,38%,0%,0%,3.5
+INFO 450,W. Chapin,WI16,Course as a whole,12%,0%,75%,12%,0%,0%,3
+INFO 450,W. Chapin,WI16,Course content,12%,0%,50%,38%,0%,0%,2.75
+INFO 450,W. Chapin,WI16,Instructor's contribution,12%,25%,50%,12%,0%,0%,3.25
+INFO 450,W. Chapin,WI16,Course content,22%,44%,33%,0%,0%,0%,3.88
+INFO 450,W. Chapin,WI16,Instructor's contribution,33%,22%,22%,11%,11%,0%,3.75
+INFO 450,W. Chapin,WI16,Instructor's effectiveness,22%,33%,22%,11%,11%,0%,3.67
+INFO 450,W. Chapin,WI16,Course as a whole,11%,56%,22%,0%,11%,0%,3.8
+INFO 450,Amirah Majid,SP16,Course as a whole,0%,12%,12%,38%,12%,25%,1.83
+INFO 450,Amirah Majid,SP16,Instructor's effectiveness,0%,12%,25%,12%,12%,38%,1.5
+INFO 450,Amirah Majid,SP16,Instructor's contribution,0%,12%,38%,25%,12%,12%,2.5
+INFO 450,Amirah Majid,SP16,Course content,0%,12%,12%,50%,0%,25%,2
+INFO 450,Amirah Majid,WI16,Course content,40%,20%,40%,0%,0%,0%,4
+INFO 450,Amirah Majid,WI16,Instructor's effectiveness,50%,10%,30%,0%,0%,10%,4.5
+INFO 450,Amirah Majid,WI16,Instructor's contribution,50%,20%,20%,0%,0%,10%,4.5
+INFO 450,Amirah Majid,WI16,Course as a whole,40%,30%,30%,0%,0%,0%,4.17
+INFO 450,Amirah Majid,SP16,Course content,8%,0%,50%,17%,17%,8%,2.67
+INFO 450,Amirah Majid,SP16,Course as a whole,8%,17%,33%,17%,25%,0%,2.75
+INFO 450,Amirah Majid,SP16,Instructor's effectiveness,8%,50%,17%,8%,17%,0%,3.67
+INFO 450,Amirah Majid,SP16,Instructor's contribution,25%,33%,8%,17%,17%,0%,3.75
+INFO 450,Amirah Majid,WI16,Instructor's contribution,60%,0%,20%,20%,0%,0%,4.67
+INFO 450,Amirah Majid,WI16,Instructor's effectiveness,60%,0%,40%,0%,0%,0%,4.67
+INFO 450,Amirah Majid,WI16,Course as a whole,60%,0%,40%,0%,0%,0%,4.67
+INFO 450,Amirah Majid,WI16,Course content,60%,0%,40%,0%,0%,0%,4.67
+INFO 463,Jacob Wobbrock,SP16,Course as a whole,25%,38%,25%,12%,0%,0%,3.83
+INFO 463,Jacob Wobbrock,SP16,Instructor's effectiveness,25%,50%,6%,19%,0%,0%,4
+INFO 463,Jacob Wobbrock,SP16,Course content,25%,44%,12%,19%,0%,0%,3.93
+INFO 463,Jacob Wobbrock,SP16,Instructor's contribution,44%,44%,6%,6%,0%,0%,4.36
+INFO 463,Martez Mott,SP16,Instructor's contribution,83%,17%,0%,0%,0%,0%,4.9
+INFO 463,Martez Mott,SP16,Instuctor's interest,67%,25%,8%,0%,0%,0%,4.75
+INFO 463,Martez Mott,SP16,Amount learned,42%,50%,0%,8%,0%,0%,4.33
+INFO 463,Martez Mott,SP16,Grading techniques,33%,50%,17%,0%,0%,0%,4.17
+INFO 463,Martez Mott,SP16,Course content,50%,25%,17%,8%,0%,0%,4.5
+INFO 463,Martez Mott,SP16,Instructor's effectiveness,75%,25%,0%,0%,0%,0%,4.83
+INFO 463,Martez Mott,SP16,Course as a whole,42%,33%,25%,0%,0%,0%,4.25
+INFO 466,Randy Hinrichs,AU15,Instructor's effectiveness,50%,26%,12%,9%,3%,0%,4.5
+INFO 466,Randy Hinrichs,AU15,Course as a whole,41%,26%,26%,6%,0%,0%,4.17
+INFO 466,Randy Hinrichs,AU15,Course content,41%,32%,15%,12%,0%,0%,4.23
+INFO 466,Randy Hinrichs,AU15,Instuctor's interest,62%,29%,6%,3%,0%,0%,4.69
+INFO 466,Randy Hinrichs,AU15,Grading techniques,44%,32%,12%,12%,0%,0%,4.32
+INFO 466,Randy Hinrichs,AU15,Amount learned,47%,21%,21%,9%,3%,0%,4.36
+INFO 466,Randy Hinrichs,AU15,Instructor's contribution,56%,18%,15%,12%,0%,0%,4.61
+INFO 466,Randy Hinrichs,WI16,Effectiveness of format,36%,44%,8%,12%,0%,0%,4.18
+INFO 466,Randy Hinrichs,WI16,Instructor's contribution,48%,36%,12%,0%,4%,0%,4.44
+INFO 466,Randy Hinrichs,WI16,Course as a whole,40%,36%,12%,8%,4%,0%,4.22
+INFO 466,Randy Hinrichs,WI16,Grading techniques,36%,36%,8%,8%,12%,0%,4.11
+INFO 466,Randy Hinrichs,WI16,Instructor feedback,33%,42%,8%,4%,4%,8%,4.1
+INFO 466,Randy Hinrichs,WI16,Tailoring instruction to skills,36%,40%,8%,16%,0%,0%,4.15
+INFO 466,Randy Hinrichs,WI16,Course content,32%,40%,12%,12%,4%,0%,4.05
+INFO 467,Randy Hinrichs,SP16,Grading techniques,50%,20%,10%,10%,10%,0%,4.5
+INFO 467,Randy Hinrichs,SP16,Course content,30%,40%,20%,10%,0%,0%,4
+INFO 467,Randy Hinrichs,SP16,Instructor's contribution,50%,10%,30%,10%,0%,0%,4.5
+INFO 467,Randy Hinrichs,SP16,Tailoring instruction to skills,50%,20%,30%,0%,0%,0%,4.5
+INFO 467,Randy Hinrichs,SP16,Effectiveness of format,40%,20%,30%,10%,0%,0%,4
+INFO 467,Randy Hinrichs,SP16,Course as a whole,30%,30%,40%,0%,0%,0%,3.83
+INFO 467,Randy Hinrichs,SP16,Instructor feedback,40%,20%,20%,20%,0%,0%,4
+INFO 470,Katie Davis,AU15,Course content,23%,29%,31%,11%,4%,1%,3.55
+INFO 470,Katie Davis,AU15,Grading techniques,28%,27%,24%,16%,3%,1%,3.69
+INFO 470,Katie Davis,AU15,Instructor's effectiveness,54%,26%,10%,9%,0%,1%,4.57
+INFO 470,Katie Davis,AU15,Course as a whole,21%,36%,27%,7%,7%,1%,3.7
+INFO 470,Katie Davis,AU15,Instuctor's interest,58%,21%,13%,6%,0%,1%,4.64
+INFO 470,Katie Davis,AU15,Amount learned,21%,24%,30%,12%,9%,4%,3.33
+INFO 470,Katie Davis,AU15,Instructor's contribution,59%,26%,6%,9%,0%,1%,4.65
+INFO 470,Chris Heaney,AU15,Course content,43%,29%,29%,0%,0%,0%,4.25
+INFO 470,Chris Heaney,AU15,Instructor's effectiveness,71%,14%,14%,0%,0%,0%,4.8
+INFO 470,Chris Heaney,AU15,Instructor's contribution,71%,14%,14%,0%,0%,0%,4.8
+INFO 470,Chris Heaney,AU15,Course as a whole,43%,29%,29%,0%,0%,0%,4.25
+INFO 470,Chris Heaney,AU15,Instructor's contribution,10%,50%,30%,0%,0%,10%,3.7
+INFO 470,Chris Heaney,AU15,Course content,0%,40%,60%,0%,0%,0%,3.33
+INFO 470,Chris Heaney,AU15,Course as a whole,0%,40%,60%,0%,0%,0%,3.33
+INFO 470,Chris Heaney,AU15,Instructor's effectiveness,10%,50%,20%,10%,0%,10%,3.7
+INFO 470,Wendy Chapin,AU15,Instructor's contribution,50%,12%,25%,12%,0%,0%,4.5
+INFO 470,Wendy Chapin,AU15,Course as a whole,25%,25%,38%,0%,0%,12%,3.5
+INFO 470,Wendy Chapin,AU15,Instructor's effectiveness,25%,25%,25%,25%,0%,0%,3.5
+INFO 470,Wendy Chapin,AU15,Course content,25%,25%,25%,12%,0%,12%,3.5
+INFO 470,An Yan,AU15,Instructor's contribution,30%,50%,10%,10%,0%,0%,4.1
+INFO 470,An Yan,AU15,Course as a whole,40%,50%,10%,0%,0%,0%,4.3
+INFO 470,An Yan,AU15,Instructor's effectiveness,30%,30%,30%,10%,0%,0%,3.83
+INFO 470,An Yan,AU15,Course content,40%,60%,0%,0%,0%,0%,4.33
+INFO 470,Wendy Chapin,AU15,Instructor's contribution,33%,50%,0%,17%,0%,0%,4.17
+INFO 470,Wendy Chapin,AU15,Course as a whole,0%,83%,0%,17%,0%,0%,3.9
+INFO 470,Wendy Chapin,AU15,Course content,17%,50%,17%,0%,17%,0%,3.83
+INFO 470,Wendy Chapin,AU15,Instructor's effectiveness,33%,50%,17%,0%,0%,0%,4.17
+INFO 470,An Yan,AU15,Instructor's contribution,0%,0%,25%,50%,0%,25%,2
+INFO 470,An Yan,AU15,Course content,0%,0%,25%,50%,25%,0%,2
+INFO 470,An Yan,AU15,Course as a whole,0%,0%,25%,25%,50%,0%,1.5
+INFO 470,An Yan,AU15,Instructor's effectiveness,0%,0%,0%,50%,25%,25%,1.5
+INFO 474,Jessica Hullman,WI16,Instructor's effectiveness,25%,25%,12%,25%,12%,0%,3.5
+INFO 474,Jessica Hullman,WI16,Instructor's contribution,38%,12%,12%,25%,0%,12%,3.5
+INFO 474,Jessica Hullman,WI16,Course as a whole,25%,0%,38%,25%,0%,12%,2.83
+INFO 474,Jessica Hullman,WI16,Course content,25%,12%,12%,38%,12%,0%,2.5
+INFO 474,Michael Freeman,SP16,Course as a whole,63%,32%,5%,0%,0%,0%,4.71
+INFO 474,Michael Freeman,SP16,Course content,58%,37%,5%,0%,0%,0%,4.64
+INFO 474,Michael Freeman,SP16,Instructor's contribution,79%,21%,0%,0%,0%,0%,4.87
+INFO 474,Michael Freeman,SP16,Instructor's effectiveness,79%,16%,5%,0%,0%,0%,4.87
+INFO 481,David Senan,AU15,Instructor's contribution,38%,50%,0%,12%,0%,0%,4.25
+INFO 481,David Senan,AU15,Course content,31%,50%,6%,12%,0%,0%,4.13
+INFO 481,David Senan,AU15,Instructor's effectiveness,56%,31%,0%,12%,0%,0%,4.61
+INFO 481,David Senan,AU15,Course as a whole,31%,50%,6%,12%,0%,0%,4.13
+INFO 481,Veronica Guajardo,AU15,Instructor's contribution,27%,27%,9%,18%,18%,0%,3.67
+INFO 481,Veronica Guajardo,AU15,Course as a whole,27%,27%,27%,18%,0%,0%,3.67
+INFO 481,Veronica Guajardo,AU15,Instructor's effectiveness,27%,27%,18%,9%,18%,0%,3.67
+INFO 481,Veronica Guajardo,AU15,Course content,27%,27%,27%,18%,0%,0%,3.67
+INFO 481,David Senan,AU15,Course as a whole,45%,32%,18%,5%,0%,0%,4.36
+INFO 481,David Senan,AU15,Course content,36%,32%,23%,9%,0%,0%,4.07
+INFO 481,David Senan,AU15,Instructor's contribution,50%,41%,9%,0%,0%,0%,4.5
+INFO 481,David Senan,AU15,Instructor's effectiveness,45%,41%,14%,0%,0%,0%,4.39
+INFO 481,KaCne Carlson,AU15,Instructor's contribution,21%,21%,14%,36%,7%,0%,3
+INFO 481,KaCne Carlson,AU15,Course as a whole,14%,21%,43%,7%,14%,0%,3.17
+INFO 481,KaCne Carlson,AU15,Textbook overall,21%,14%,36%,21%,7%,0%,3.1
+INFO 481,KaCne Carlson,AU15,Amount learned,21%,21%,29%,21%,7%,0%,3.25
+INFO 481,KaCne Carlson,AU15,Relevance and usefulness of homework,29%,29%,21%,14%,7%,0%,3.75
+INFO 481,KaCne Carlson,AU15,Instuctor's interest,43%,36%,0%,14%,0%,7%,4.3
+INFO 481,KaCne Carlson,AU15,Instructor overall,29%,36%,14%,14%,7%,0%,3.9
+INFO 490,Nam Park,WI16,Course content,22%,30%,30%,11%,5%,1%,3.59
+INFO 490,Nam Park,WI16,Course as a whole,21%,32%,37%,8%,3%,0%,3.58
+INFO 490,Nam Park,WI16,Instructor's effectiveness,45%,25%,18%,11%,1%,0%,4.29
+INFO 490,Nam Park,WI16,Instructor's contribution,43%,30%,17%,7%,3%,0%,4.28
+INFO 490,Moonjung Yim,WI16,Instructor's contribution,40%,60%,0%,0%,0%,0%,4.33
+INFO 490,Moonjung Yim,WI16,Course content,33%,44%,22%,0%,0%,0%,4.13
+INFO 490,Moonjung Yim,WI16,Course as a whole,56%,33%,11%,0%,0%,0%,4.6
+INFO 490,Moonjung Yim,WI16,Instructor's effectiveness,40%,40%,20%,0%,0%,0%,4.25
+INFO 491,Nam Park,SP16,Instructor's contribution,50%,23%,19%,6%,0%,2%,4.5
+INFO 491,Nam Park,SP16,Instructor's effectiveness,53%,23%,14%,8%,0%,2%,4.56
+INFO 491,Nam Park,SP16,Course as a whole,40%,29%,19%,10%,2%,2%,4.14
+INFO 491,Nam Park,SP16,Course content,33%,30%,21%,11%,3%,2%,3.95
+INFO 498,Brian Fling,SP16,Course as a whole,69%,31%,0%,0%,0%,0%,4.78
+INFO 498,Brian Fling,SP16,Instructor's contribution,77%,15%,8%,0%,0%,0%,4.85
+INFO 498,Brian Fling,SP16,Instructor's effectiveness,77%,15%,8%,0%,0%,0%,4.85
+INFO 498,Brian Fling,SP16,Course content,62%,31%,0%,8%,0%,0%,4.69
+INFO 498,Brian Fling,WI16,Course as a whole,75%,0%,12%,12%,0%,0%,4.83
+INFO 498,Brian Fling,WI16,Instructor's contribution,62%,12%,25%,0%,0%,0%,4.7
+INFO 498,Brian Fling,WI16,Course content,75%,0%,12%,12%,0%,0%,4.83
+INFO 498,Brian Fling,WI16,Instructor's effectiveness,62%,25%,12%,0%,0%,0%,4.7
+INFO 498,Grey Hay,SU16,Instructor's contribution,50%,17%,33%,0%,0%,0%,4.5
+INFO 498,Grey Hay,SU16,Course as a whole,50%,17%,33%,0%,0%,0%,4.5
+INFO 498,Grey Hay,SU16,Instructor's effectiveness,50%,33%,17%,0%,0%,0%,4.5
+INFO 498,Grey Hay,SU16,Course content,50%,33%,17%,0%,0%,0%,4.5
+INFO 498,Core Neward,AU15,Course as a whole,22%,33%,22%,22%,0%,0%,3.67
+INFO 498,Core Neward,AU15,Instructor's effectiveness,22%,33%,22%,17%,6%,0%,3.67
+INFO 498,Core Neward,AU15,Instructor's contribution,44%,17%,17%,17%,6%,0%,4.17
+INFO 498,Core Neward,AU15,Course content,22%,22%,39%,17%,0%,0%,3.36
+INFO 498,Brian Fling,AU15,Course content,75%,0%,25%,0%,0%,0%,4.83
+INFO 498,Brian Fling,AU15,Instructor's effectiveness,75%,12%,12%,0%,0%,0%,4.83
+INFO 498,Brian Fling,AU15,Instructor's contribution,75%,25%,0%,0%,0%,0%,4.83
+INFO 498,Brian Fling,AU15,Course as a whole,88%,0%,12%,0%,0%,0%,4.93
+INFO 498,Joel Ross,SP16,Instructor's effectiveness,53%,24%,18%,0%,6%,0%,4.56
+INFO 498,Joel Ross,SP16,Instructor's contribution,65%,18%,18%,0%,0%,0%,4.73
+INFO 498,Joel Ross,SP16,Grading techniques,41%,29%,18%,6%,6%,0%,4.2
+INFO 498,Joel Ross,SP16,Amount learned,71%,18%,12%,0%,0%,0%,4.79
+INFO 498,Joel Ross,SP16,Course content,71%,24%,6%,0%,0%,0%,4.79
+INFO 498,Joel Ross,SP16,Instuctor's interest,65%,12%,18%,6%,0%,0%,4.73
+INFO 498,Joel Ross,SP16,Course as a whole,59%,24%,12%,6%,0%,0%,4.65
+INFO 498,Joel Ross,WI16,Amount learned,91%,9%,0%,0%,0%,0%,4.95
+INFO 498,Joel Ross,WI16,Course content,55%,45%,0%,0%,0%,0%,4.58
+INFO 498,Joel Ross,WI16,Instuctor's interest,73%,18%,9%,0%,0%,0%,4.81
+INFO 498,Joel Ross,WI16,Course as a whole,73%,18%,9%,0%,0%,0%,4.81
+INFO 498,Joel Ross,WI16,Instructor's effectiveness,55%,18%,18%,9%,0%,0%,4.58
+INFO 498,Joel Ross,WI16,Grading techniques,82%,9%,9%,0%,0%,0%,4.89
+INFO 498,Joel Ross,WI16,Instructor's contribution,55%,27%,18%,0%,0%,0%,4.58
+INFO 498,Core Neward,SP16,Course content,73%,0%,18%,9%,0%,0%,4.81
+INFO 498,Core Neward,SP16,Instructor's contribution,73%,0%,18%,9%,0%,0%,4.81
+INFO 498,Core Neward,SP16,Instructor's effectiveness,73%,0%,18%,0%,9%,0%,4.81
+INFO 498,Core Neward,SP16,Course as a whole,73%,0%,18%,0%,9%,0%,4.81
+INFO 498,Joel Ross,WI16,Amount learned,34%,31%,25%,3%,6%,0%,4
+INFO 498,Joel Ross,WI16,Relevance and usefulness of homework,22%,47%,16%,12%,3%,0%,3.9
+INFO 498,Joel Ross,WI16,Instuctor's interest,50%,34%,16%,0%,0%,0%,4.5
+INFO 498,Joel Ross,WI16,Instructor's contribution,44%,25%,16%,9%,6%,0%,4.25
+INFO 498,Joel Ross,WI16,Instructor overall,50%,31%,12%,6%,0%,0%,4.5
+INFO 498,Joel Ross,WI16,Textbook overall,25%,41%,25%,6%,3%,0%,3.88
+INFO 498,Joel Ross,WI16,Course as a whole,25%,38%,22%,12%,3%,0%,3.83
+INFO 498,Michael Freeman,WI16,Course as a whole,60%,23%,14%,3%,0%,0%,4.67
+INFO 498,Michael Freeman,WI16,Instructor's contribution,74%,17%,9%,0%,0%,0%,4.82
+INFO 498,Michael Freeman,WI16,Instructor's effectiveness,62%,20%,14%,3%,2%,0%,4.69
+INFO 498,Michael Freeman,WI16,Course content,60%,25%,12%,3%,0%,0%,4.67

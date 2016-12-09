@@ -4,6 +4,7 @@
 	margin: 10px 10px;
 	position: relative;
 	padding: 10px 20px;
+	word-wrap: break-word;
 }
 
 .reviewSec hr {
@@ -13,5 +14,10 @@
 
 .date {
 	float: right;
-	margin-top: -40px;
+	display: inline-block;
+	margin-top: -10px;
+}
+
+.content: {
+	word-wrap: break-word;
 }

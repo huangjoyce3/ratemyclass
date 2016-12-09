@@ -3,6 +3,7 @@
     margin-bottom: 10px;
     position: absolute;
     width: 48%;
+
     border: 4px double #daa520;
     
 }
@@ -16,7 +17,7 @@ select {
 	text-align: center;
 	color: #56339a;
 	margin-top: -1px;
-	height: 60px;
+	height: 100px;
 	padding-top: 15px;
 	font-weight: bold;
 }
@@ -29,4 +30,10 @@ select {
 	display: table;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+@media screen and (min-width:660px) {
+	.comment h4 {
+		height: 60px;
+	}
 }

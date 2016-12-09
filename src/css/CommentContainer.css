@@ -8,11 +8,12 @@
 	border: 4px double #daa520;
 	margin-top: 20px;
 	position: relative;
-	max-height: 696px;
+	max-height: 867px;
 	width: 47%;
 	float: right;
 	overflow: auto;
 	margin-bottom: 10px;
+	margin-right: -10px;
 }
 
 .commentSec h4 {
@@ -20,7 +21,7 @@
 	text-align: center;
 	color: #56339a;
 	margin-top: -1px;
-	height: 60px;
+	height: 130px;
 	padding-top: 15px;
 	font-weight: bold;
 }
@@ -32,4 +33,16 @@
 	margin: 0 auto;
 	margin-top: 20px;
 	height: 50%;
+	overflow: auto;
+}
+
+@media screen and (min-width:660px) {
+	.commentSec h4 {
+		height: 60px;
+	}
+
+	.commentSec {
+		margin-right: 0px;
+		max-height: 733px;
+	}
 }
