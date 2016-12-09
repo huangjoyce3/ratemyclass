@@ -33,7 +33,7 @@ var CommentBox = React.createClass({
         			    <form onSubmit={this.props.handleSubmit}>
                             
                             <p>When did you take this class?</p>
-                            <select id='quarter'>
+                            <select required id='quarter'>
                                 <option value='Autumn'>Autumn</option>
                                 <option value='Winter'>Winter</option>
                                 <option value='Spring'>Spring</option>
@@ -41,7 +41,7 @@ var CommentBox = React.createClass({
                             </select>
 
                             <p>Who was your instructor?</p>
-                            <select id='instructor'>
+                            <select required id='instructor'>
                             <option value='other'>Other</option>
                                 {
                                     this.props.instructorsList.map(function(d, i){
@@ -55,9 +55,9 @@ var CommentBox = React.createClass({
 
 
                             <p>Would you like to be anonymous?</p>
-                            <select id='anon'>
+                            <select  id='anon'>
+                                <option value='n'>No</option>
                                 <option value='y'>Yes</option>
-                                <option value='n' selected>No</option>
                             </select>
 
                             <p>Difficulty of this class?</p>

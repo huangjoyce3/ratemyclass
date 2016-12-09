@@ -16,7 +16,7 @@ var EvalChart = React.createClass({
 		const style = {
 		  	top: 0,
 		  	left: 350,
-		  	lineHeight: '24px'
+		  	lineHeight: '40px'
 		  };
 
 		  const styles = {
@@ -38,14 +38,16 @@ var EvalChart = React.createClass({
 
 	        <TabPanel>
 	        <div className="eval">
-			<div className="chart1">
-				<RadialBarChart title='Course Eval' width={500} height={300} cx={150} cy={150}
-					innerRadius={20} outerRadius={140} barSize={10} data={this.props.evalData}>
-	    		<RadialBar fill='black' minAngle={15} label background clockWise={true} dataKey='uv'/>
-	            <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='left' wrapperStyle={style}/>
-	            <Tooltip cursor={{strokeDasharray: '3 3'}} />
-	            </RadialBarChart>
-		    </div>
+	        	<p>This chart consists of data gathered from the UW Course Evaluation Catalog. The numbers displayed are the averages for each question of all sections taught in the previous calendar year. 
+	        	The scale values range from 0 being 'Very Poor' to 5 being 'Excellent'. Evaluations for teaching assistants are excluded in this dataset.</p>
+				<div className="chart1">
+					<RadialBarChart title='Course Eval' width={500} height={300} cx={150} cy={150}
+						innerRadius={20} outerRadius={140} barSize={10} data={this.props.evalData}>
+		    		<RadialBar fill='black' minAngle={15} label background clockWise={true} dataKey='uv'/>
+		            <Legend iconSize={10} width={250} height={100} layout='vertical' verticalAlign='left' wrapperStyle={style}/>
+		            <Tooltip cursor={{strokeDasharray: '3 3'}} />
+		            </RadialBarChart>
+			    </div>
 		    </div>
 		    </TabPanel>
 

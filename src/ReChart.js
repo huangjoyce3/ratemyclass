@@ -48,7 +48,7 @@ var ReChart = React.createClass({
 	
 			<div className="dotChart">
 
-				<p>This scatter plot shows the difficulty and workload each reviewer feel about this class. Search for 
+				<p>This scatter plot shows the difficulty and workload each reviewer feels about this class. Search for 
 				   a specific instructor by typing in the name of instructor. Click the four buttons below to change the 
 				   shape of the scatters as you like!</p>
 				<input type="text" className="search" placeholder="Type in an instructor..." onChange={this.filterData} />
