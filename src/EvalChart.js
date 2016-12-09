@@ -38,7 +38,7 @@ var EvalChart = React.createClass({
 
 	        <TabPanel>
 	        <div className="eval">
-			<div className="chart">
+			<div className="chart1">
 				<RadialBarChart title='Course Eval' width={500} height={300} cx={150} cy={150}
 					innerRadius={20} outerRadius={140} barSize={10} data={this.props.evalData}>
 	    		<RadialBar fill='black' minAngle={15} label background clockWise={true} dataKey='uv'/>
@@ -51,10 +51,8 @@ var EvalChart = React.createClass({
 
 		    <TabPanel>
 		    <div className="reChart">
-		    <div className="chart">
 		        <ReChart chartData={this.props.chartData}/>
-		    </div>
-		    </div>
+		    </div>	    
 		    </TabPanel>
 		    </Tabs>
 		)

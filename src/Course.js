@@ -14,11 +14,13 @@ var Course = React.createClass({
 
         return (
         	<div className="flex-item box" id="eachCourse">
+            <div className="allCourse">
             <button onClick={this.btnClick} type="submit" className="btn">{this.props.number}</button>
-        	<span>{this.props.name}&nbsp;</span>
-        	<span>&nbsp;({this.props.credits})&nbsp;</span>
-        	<span>&nbsp;&nbsp;{this.props.type}</span>
+        	<span>&nbsp;{this.props.name}</span>
+        	<span>({this.props.credits})</span>
+        	<span>{this.props.type}</span>
         	</div>
+            </div>
         )
     }
 });

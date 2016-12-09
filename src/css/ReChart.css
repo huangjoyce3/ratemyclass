@@ -4,7 +4,7 @@
 	margin-top: 15px;
 }
 
-.chart input[type="text"] {
+.dotChart input[type="text"] {
 	display: table;
 	margin: 0 auto;
 	border: 1px solid black;
@@ -16,13 +16,19 @@
     width: 50%;
 }
 
-.chart input[type="text"]:focus {
+.dotChart input[type="text"]:focus {
     border: 1px solid black;
 }
 
-.chart p {
+.dotChart p {
 	margin-bottom: 30px;
-	margin-top: -10px;
 	margin-left: 30px;
 	margin-right: 30px;
+	margin-top: 30px;
+}
+
+.chart2 {
+	display: table;
+	margin: 0 auto;
+	padding-right: 40px;
 }

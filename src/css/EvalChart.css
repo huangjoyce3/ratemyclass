@@ -1,13 +1,9 @@
-.chart {
+.chart1 {
 	display: table;
 	margin:0 auto;
-	margin-top: 20px;
-}
-
-.eval .chart {
 	margin-top: 90px;
 }
 
-.reChart .chart {
+.reChart {
 	margin-bottom: 15px;
 }
