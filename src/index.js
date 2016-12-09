@@ -20,7 +20,6 @@ ReactDOM.render(
             <Route path="/" component={App}>
                 <IndexRoute component={HomePage}/>
                 <Route path="/HomePage" component={HomePage}/>
-                <Route path="/About" component={About}/>
                 <Route path="/course/:searchString" component={HomePage}/>
             </Route>
         </Router>,

@@ -13,6 +13,7 @@ import 'react-select/dist/react-select.css';
 import { Router, hashHistory } from 'react-router';
 import CommentContainer from './CommentContainer';
 import AllCourses from './AllCourses';
+import About from './About';
 
 var HomePage = React.createClass({
 	getInitialState(){
@@ -179,6 +180,8 @@ var HomePage = React.createClass({
         }
 		return(
 				<div>
+				<About/>
+
 					{!this.state.user &&
 	                    <div>
 	                        {authComponent}
