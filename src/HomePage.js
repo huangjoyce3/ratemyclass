@@ -214,14 +214,12 @@ var HomePage = React.createClass({
 								</section>
 							
 
-							{this.state.user && !this.state.hasResult && 
-								<div className="no-result">Class Not Found</div>
-							}
+
 						</div>
 					</div>
 					}
 
-					{this.state.user && !this.state.hasResult &&
+					{this.state.user && !this.state.hasResult && 
 						<div className="no-result">Class Not Found</div>
 					}
 
